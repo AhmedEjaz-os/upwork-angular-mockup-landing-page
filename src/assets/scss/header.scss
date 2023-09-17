@@ -1,0 +1,17 @@
+.header {
+    border: 3px solid #185e9b;
+  &-section {
+    &-1 {
+      &__title {}
+    }
+    &-2 {
+      &__title {}
+      &__logout{
+        color: #185e9b;
+        &-underline-text{
+            text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -7,14 +7,14 @@ import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 import { AppComponent } from "./app/app.component";
 import { AngularMaterialDialogComponent } from "./app/components/angular-material-dialog/angular-material-dialog.component";
 import { HeaderComponent } from "./app/components/header/header.component";
-import { HomeComponent } from "./app/components/home/home.component";
+import { Page1Component } from "./app/components/page-1/page-1.component";
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent,
+    component: Page1Component,
     data: {
-      breadcrumb: "HOME",
+      breadcrumb: "...",
     },
   },
   {

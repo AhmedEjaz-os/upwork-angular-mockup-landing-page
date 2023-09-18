@@ -6,7 +6,15 @@
 
 // Global Components Stylings here...
 .select-menu{
-    width: 300px;
-    height: 300px;
-    border: 2px solid black;
+    width: 209px;
+    height: 151px;
+    border: 3px solid black;
+    overflow-y: scroll;
+    position: relative;
+    scrollbar-color: rebeccapurple;
+    button{
+        text-align: start;
+        border: 1px solid black !important;
+    }
+    &::-webkit-scrollbar{}
 }

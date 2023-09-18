@@ -55,7 +55,17 @@
                 }
             }
         }
-        &-3{}
+        &-3{
+            margin-left: 5rem;
+            &__btn{
+                &-1{
+                    @include btn-primary;
+                }
+                &-2{
+                    @include btn-primary;
+                }
+            }
+        }
         &-4{}
     }
 }

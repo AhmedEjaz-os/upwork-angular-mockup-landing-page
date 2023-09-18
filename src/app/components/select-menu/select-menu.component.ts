@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-select-menu',
@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./select-menu.component.scss']
 })
 export class SelectMenuComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor() {}
+  ngOnInit() {}
 
 }

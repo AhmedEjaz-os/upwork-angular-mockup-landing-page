@@ -1,0 +1,65 @@
+// Button Stylings
+@mixin btn-primary {
+    border-radius: 0px !important;
+    padding: 1px 6px !important;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+    transition: .6s all ease-in-out;
+    &:hover{
+        border: 2px solid black;
+        box-shadow: 4px -4px black;
+        cursor: pointer;
+    }
+}
+
+.homepage{
+    &-section{
+        &-1{
+            &__breadcrumbs{
+                text-decoration: underline;
+            }
+        }
+        &-2{
+            margin-left: 5rem;
+            &__title{}
+            &__input{
+                &-1{
+                    &__label{
+                        width: 158px;
+                    }
+                    &__field{
+                        width: 200px;
+                        border: 2px solid black;
+                    }
+                    &__btn{
+                        @include btn-primary;
+                    }
+                }
+                &-2{
+                    &__label{
+                        text-align: end;
+                        width: 158px;
+                    }
+                    &__field{
+                        width: 200px;
+                        border: 2px solid black;
+                    }
+                    &__btn{
+                        &-1{
+                            @include btn-primary;
+                        }
+                        &-2{
+                            @include btn-primary;
+                        }
+                    }
+                }
+            }
+        }
+        &-3{}
+        &-4{}
+    }
+}
+
+hr{
+    border: 2px solid black
+}

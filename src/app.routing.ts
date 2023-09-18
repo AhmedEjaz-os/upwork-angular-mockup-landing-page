@@ -4,10 +4,9 @@ import { Routes, RouterModule } from "@angular/router";
 import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 
 // Component Imports
-import { AppComponent } from "./app/app.component";
 import { AngularMaterialDialogComponent } from "./app/components/angular-material-dialog/angular-material-dialog.component";
-import { HeaderComponent } from "./app/components/header/header.component";
 import { Page1Component } from "./app/components/page-1/page-1.component";
+import { SelectMenuComponent } from "./app/components/select-menu/select-menu.component";
 
 const routes: Routes = [
   {
@@ -19,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: "user",
-    component: HeaderComponent,
+    component: SelectMenuComponent,
   },
   {
     path: "post",

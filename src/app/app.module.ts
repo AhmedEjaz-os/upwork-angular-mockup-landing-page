@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { AngularMaterialDialogComponent } from './components/angular-material-dialog/angular-material-dialog.component';
 import { HeaderComponent } from './components/header/header.component';
 import { Page1Component } from './components/page-1/page-1.component';
+import { SelectMenuComponent } from './components/select-menu/select-menu.component';
 
 const MaterialImportsArray = [
   
@@ -21,7 +22,8 @@ const MaterialImportsArray = [
     AngularMaterialDialogComponent,
     AppComponent,
     HeaderComponent,
-    Page1Component
+    Page1Component,
+    SelectMenuComponent
   ],
   imports: [
     BrowserModule,

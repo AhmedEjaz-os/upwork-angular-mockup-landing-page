@@ -21,15 +21,17 @@
         }
         &-2{
             margin-left: 5rem;
-            &__title{}
+            &__title{
+                font-size: 18px;
+            }
             &__input{
                 &-1{
                     &__label{
                         width: 158px;
                     }
                     &__field{
-                        width: 200px;
-                        border: 2px solid black;
+                        width: 284px;
+                        border: 3px solid black;
                     }
                     &__btn{
                         @include btn-primary;
@@ -41,8 +43,8 @@
                         width: 158px;
                     }
                     &__field{
-                        width: 200px;
-                        border: 2px solid black;
+                        width: 284px;
+                        border: 3px solid black;
                     }
                     &__btn{
                         &-1{

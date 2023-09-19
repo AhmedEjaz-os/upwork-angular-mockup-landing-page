@@ -16,7 +16,7 @@
         <h5 class="font-weight-bold homepage-section-2__title">Go to an account using the company name AND Goldfire account</h5>
         <div class="d-flex mt-3">
             <div class="d-flex">
-                <app-select-menu class="mr-3" [menuHeading]="selectMenuHeadingOne" [button]="selectMenuHeadingOneArray" ></app-select-menu>
+                <app-select-menu class="homepage-select-menu" [menuHeading]="selectMenuHeadingOne" [button]="selectMenuHeadingOneArray" ></app-select-menu>
                 <app-select-menu [menuHeading]="selectMenuHeadingTwo" [button]="selectMenuHeadingTwoArray"></app-select-menu>
             </div>
             <div class="d-flex flex-column justify-content-between pt-4">
@@ -28,8 +28,9 @@
     <hr class="text-dark mt-5 ml-5 mr-5" />
     <div class="homepage-section-4">
         <h5 class="font-weight-bold homepage-section-4__title">Create new company and add Goldfire accounts</h5>
-        <div class="d-flex align-items-center justify-content-center">
-            <input type="text" class="homepage-section-4__field mr-4" placeholder="Enter company name" />
+        <div class="d-flex align-items-center">
+            <div></div>
+            <input type="text" class="homepage-section-4__field" placeholder="Enter company name" />
             <button class="homepage-section-4__btn btn btn-primary">New Company</button>
         </div>
     </div>

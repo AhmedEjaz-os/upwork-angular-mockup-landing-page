@@ -1,0 +1,30 @@
+.new-account{
+    &__section{
+        &-1{
+            &__breadcrumbs{}
+        }
+        &-2{
+            &__subFields{
+                display: block;
+                width: fit-content;
+            }
+            &__input{
+                &-fields{
+                    display: block;
+                    width: fit-content;
+                }
+                &-goldfire{
+                    .account-page-input-fields {
+                        margin-bottom: 0px !important;
+                    }
+                }
+            }
+            &__btn{
+                &-1{
+                    @include btn-primary;
+                    margin: 0 0 0 auto;
+                }
+            }
+        }
+    }
+}

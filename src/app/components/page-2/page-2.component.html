@@ -1,0 +1,25 @@
+<div class="new-account mb-3 ml-3 mr-3">
+  <div class="new-account__section-1">
+    <p><a href="/" class="new-account__section-1__breadcrumbs">Home</a> > <span>Add New Account</span></p>
+  </div>
+  <div class="new-account__section-2 ml-5 mt-5">
+    <h5 class="font-weight-bold new-account__section-2__title">Add New Account for "{{companyName}}" </h5>
+    <div class="new-account__section-2__subFields ml-5 mt-5">
+        <app-page-2-input-fields *ngFor="let label of labels;" [Label]="label.title" class="new-account__section-2__input-fields"></app-page-2-input-fields>
+        <div class="w-100 d-flex justify-content-end">
+          <button class="new-account__section-2__btn-1 btn btn-primary">Add Additional Contacts</button>
+        </div>
+        <div class="d-flex account-page-input-fields mb-3 align-items-start mt-5">
+          <p class="account-page-input-fields__title font-weight-bold mb-0">Comments</p>
+          <textarea name="" id="" cols="30" rows="10" class="account-page-input-fields__input"></textarea>
+        </div>
+      </div>
+      <div class="d-flex align-items-center ml-5 mt-5">
+        <app-page-2-input-fields [Label]="goldFireLabel" class="new-account__section-2__input-goldfire"></app-page-2-input-fields>
+        <div class="d-flex flex-column ml-3 mb-3">
+          <p class="mb-0">Maintenance</p>
+          <input type="checkbox" style="cursor: pointer" class="mt-2" />
+        </div>
+      </div>
+  </div>
+</div>

@@ -2,6 +2,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./assets/scss/header.scss";
 @import "./assets/scss/homepage.scss";
+@import "./assets/scss/newaccountpage.scss";
 
 
 // Global Components Stylings here...
@@ -22,5 +23,15 @@
         &:active{
             background-color: rgb(158, 158, 158);
         }
+    }
+}
+
+.account-page-input-fields{
+    &__title{
+        width: 200px;
+    }
+    &__input{
+        width: 250px;
+        border: 3px solid black;
     }
 }

@@ -13,6 +13,8 @@ import { AngularMaterialDialogComponent } from './components/angular-material-di
 import { HeaderComponent } from './components/header/header.component';
 import { Page1Component } from './components/page-1/page-1.component';
 import { SelectMenuComponent } from './components/select-menu/select-menu.component';
+import { Page2Component } from './components/page-2/page-2.component';
+import { Page2InputFieldsComponent } from './components/page-2-input-fields/page-2-input-fields.component';
 
 const MaterialImportsArray = [
   
@@ -24,6 +26,8 @@ const MaterialImportsArray = [
     HeaderComponent,
     Page1Component,
     SelectMenuComponent,
+    Page2Component,
+    Page2InputFieldsComponent,
   ],
   imports: [
     BrowserModule,

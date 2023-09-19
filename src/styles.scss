@@ -6,7 +6,7 @@
 
 // Global Components Stylings here...
 .select-menu{
-    width: 209px;
+    width: 215px;
     height: 151px;
     border: 3px solid black;
     overflow-y: scroll;
@@ -15,6 +15,8 @@
     button{
         text-align: start;
         border: 1px solid black !important;
+        &:active{
+            background-color: rgb(158, 158, 158);
+        }
     }
-    &::-webkit-scrollbar{}
 }

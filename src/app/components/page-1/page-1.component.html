@@ -16,10 +16,10 @@
         <h5 class="font-weight-bold homepage-section-2__title">Go to an account using the company name AND Goldfire account</h5>
         <div class="d-flex mt-3">
             <div class="d-flex">
-                <app-select-menu class="mr-3 position-relative"></app-select-menu>
-                <app-select-menu class="position-relative"></app-select-menu>
+                <app-select-menu class="mr-3" [menuHeading]="selectMenuHeadingOne" [button]="selectMenuHeadingOneArray" ></app-select-menu>
+                <app-select-menu [menuHeading]="selectMenuHeadingTwo" [button]="selectMenuHeadingTwoArray"></app-select-menu>
             </div>
-            <div class="d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column justify-content-between pt-4">
                 <button class="ml-5 btn btn-primary homepage-section-3__btn-1">View Account</button>
                 <button class="ml-5 btn btn-primary homepage-section-3__btn-2">New Account</button>
             </div>

@@ -23,7 +23,7 @@ const MaterialImportsArray = [
     AppComponent,
     HeaderComponent,
     Page1Component,
-    SelectMenuComponent
+    SelectMenuComponent,
   ],
   imports: [
     BrowserModule,

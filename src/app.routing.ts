@@ -17,7 +17,7 @@ const routes: Routes = [
     },
   },
   {
-    path: "user",
+    path: "new-account",
     component: SelectMenuComponent,
   },
   {

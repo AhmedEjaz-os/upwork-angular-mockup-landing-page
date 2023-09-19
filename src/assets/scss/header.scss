@@ -15,3 +15,24 @@
     }
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .header {
+    border: 3px solid #185e9b;
+  &-section {
+    &-1 {
+      &__title {
+        font-size: 1.2rem;
+      }
+    }
+    &-2 {
+      &__title {
+        font-size: 1rem;
+      }
+      &__logout{
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+}

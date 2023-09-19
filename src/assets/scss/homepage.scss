@@ -26,6 +26,7 @@
             }
             &__input{
                 &-1{
+                    grid-row-gap: 14px;
                     &__label{
                         width: 158px;
                     }
@@ -38,6 +39,7 @@
                     }
                 }
                 &-2{
+                    grid-row-gap: 14px;
                     &__label{
                         text-align: end;
                         width: 158px;
@@ -52,6 +54,7 @@
                         }
                         &-2{
                             @include btn-primary;
+                            margin-left: 2.6rem;
                         }
                     }
                 }
@@ -62,9 +65,11 @@
             &__btn{
                 &-1{
                     @include btn-primary;
+                    margin-left: 5rem;
                 }
                 &-2{
                     @include btn-primary;
+                    margin-left: 5rem;
                 }
             }
         }
@@ -88,7 +93,6 @@
             }
             &__btn{
                 @include btn-primary;
-                margin-left: 48px;
             }
         }
     }
@@ -101,6 +105,22 @@ hr{
     border: 2px solid black
 }
 
+@media (max-width: 576px){
+    .homepage{
+        &-select-menu{
+            margin-right: 0px !important;
+            .select-menu__parent{
+                width: fit-content;
+            }
+            &-2{
+                .select-menu__parent{
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
+
 @include media-breakpoint-down(sm) {
     .homepage{
         &-section{
@@ -108,7 +128,7 @@ hr{
                 &__breadcrumbs{}
             }
             &-2{
-                margin-left: 2rem;
+                margin-left: 1rem;
                 &__title{}
                 &__input{
                     &-1{
@@ -117,7 +137,9 @@ hr{
                         &__btn{}
                     }
                     &-2{
-                        &__label{}
+                        &__label{
+                            text-align: start;
+                        }
                         &__field{}
                         &__btn{
                             &-1{}
@@ -127,19 +149,122 @@ hr{
                 }
             }
             &-3{
-                margin-left: 2rem;
+                &__btn{
+                    &-1{
+                        width: fit-content;
+                        margin-left: 0px;
+                    }
+                    &-2{
+                        width: fit-content;
+                        margin-left: 0px;
+                    }
+                }
+            }
+            &-4{
+                &__title{}
+                &__field{
+                    &::placeholder{}
+                }
+                &__btn{
+                    margin-left: 0px !important;
+                    margin-top: 14px;
+                }
+            }
+        }
+        &-select-menu{
+            .select-menu__parent{
+                width: fit-content;
+            }
+            &-2{
+                .select-menu__parent{
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .homepage{
+        &-section{
+            &-1{
+                &__breadcrumbs{}
+            }
+            &-2{
+                margin-left: 1rem;
+                &__title{}
+                &__input{
+                    &-1{
+                        &__label{}
+                        &__field{
+                            width: 250px;
+                        }
+                        &__btn{}
+                    }
+                    &-2{
+                        &__label{}
+                        &__field{
+                            width: 250px;
+                        }
+                        &__btn{
+                            &-1{}
+                            &-2{
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            &-3{
+                margin-left: 1rem;
                 &__btn{
                     &-1{}
                     &-2{}
                 }
             }
             &-4{
-                margin-left: 2rem;
+                margin-left: 1rem;
                 &__title{}
                 &__field{
+                    width: 250px;
                     &::placeholder{}
                 }
                 &__btn{}
+            }
+        }
+        &-select-menu{
+            margin-right: 5.6rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage{
+        &-section{
+            &-3{
+                &__btn{
+                    &-1{
+                        margin-left: 0px !important;
+                    }
+                    &-2{
+                        margin-left: 0px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .homepage{
+        &-section{
+            &-3{
+                &__btn{
+                    &-1{
+                        margin-left: 3rem;
+                    }
+                    &-2{
+                        margin-left: 3rem;
+                    }
+                }
             }
         }
     }

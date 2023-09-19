@@ -25,6 +25,20 @@
                     margin: 0 0 0 auto;
                 }
             }
+            &--button-row{
+                &__btn{
+                    &-1{
+                        @include btn-primary;
+                        background-color: #999;
+                    }
+                    &-2{
+                        @include btn-primary;
+                    }
+                    &-3{
+                        @include btn-primary;
+                    }
+                }
+            }
         }
     }
 }

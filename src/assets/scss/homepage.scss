@@ -124,7 +124,14 @@ hr{
                     &-2{}
                 }
             }
-            &-4{}
+            &-4{
+                margin-left: 2rem;
+                &__title{}
+                &__field{
+                    &::placeholder{}
+                }
+                &__btn{}
+            }
         }
     }
 }

@@ -30,7 +30,7 @@
                         width: 158px;
                     }
                     &__field{
-                        max-width: 284px;
+                        width: 284px;
                         border: 3px solid black;
                     }
                     &__btn{
@@ -43,7 +43,7 @@
                         width: 158px;
                     }
                     &__field{
-                        max-width: 284px;
+                        width: 284px;
                         border: 3px solid black;
                     }
                     &__btn{
@@ -74,7 +74,7 @@
                 @extend .mb-5;
             }
             &__field{
-                max-width: 284px;
+                width: 284px;
                 border: 3px solid black;
                 &::placeholder{
                     font-size: 18px;

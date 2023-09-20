@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Page2Component implements OnInit {
   companyName: string = "Company_Name";
   labels: any;
+  verticalLabels: any;
   goldFireLabel: string = "Goldfire Serial Number";
 
   constructor() { }
@@ -28,6 +29,28 @@ export class Page2Component implements OnInit {
       },
       {
         title: "Phone"
+      }
+    ]
+    this.verticalLabels = [
+      {
+        title: "Starts",
+        align: "center",
+        marginBottom: "1.4rem"
+      },
+      {
+        title: "Expires",
+        align: "center",
+        marginBottom: "1.4rem"
+      },
+      {
+        title: "Max number of automatic registration changes",
+        align: "start",
+        marginBottom: "4.4rem"
+      },
+      {
+        title: "Delay for automatic registration changes in hours",
+        align: "start",
+        marginBottom: "4.4rem"
       }
     ]
   }

@@ -1,4 +1,16 @@
 .new-account{
+    margin-bottom: 1rem;
+    &-page-input-fields{
+        &__last-row{
+            width: fit-content;
+        }
+        &__next-button-row{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            left: unset;
+        }
+    }
     &__section{
         &-1{
             &__breadcrumbs{}
@@ -30,14 +42,35 @@
                     &-1{
                         @include btn-primary;
                         background-color: #999;
+                        margin-right: 3.4rem;
                     }
                     &-2{
                         @include btn-primary;
+                        margin-right: 2rem;
                     }
                     &-3{
                         @include btn-primary;
+                        margin-right: 7.2rem;
                     }
                 }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .new-account__section-2__btn-1{
+        margin: 0;
+    }
+    .new-account{
+        margin-bottom: 6rem;
+        &-page-input-fields{
+            &__last-row{}
+            &__next-button-row{
+                bottom: -70px;
+                right: unset;
+                left: 0px;
+                align-items: unset !important;
             }
         }
     }

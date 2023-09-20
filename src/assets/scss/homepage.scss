@@ -21,6 +21,10 @@
         }
         &-2{
             margin-left: 5rem;
+            width: fit-content;
+            hr{
+                margin-right: 6.2rem;
+            }
             &__title{
                 font-size: 18px;
             }
@@ -62,6 +66,10 @@
         }
         &-3{
             margin-left: 5rem;
+            width: fit-content;
+            hr{
+                margin-right: 6.2rem;
+            }
             &__btn{
                 &-1{
                     @include btn-primary;

@@ -21,6 +21,10 @@
         }
         &-2{
             margin-left: 5rem;
+            width: fit-content;
+            hr{
+                margin-right: 6.1rem;
+            }
             &__title{
                 font-size: 18px;
             }
@@ -62,6 +66,10 @@
         }
         &-3{
             margin-left: 5rem;
+            width: fit-content;
+            hr{
+                margin-right: 7rem;
+            }
             &__btn{
                 &-1{
                     @include btn-primary;
@@ -129,6 +137,9 @@ hr{
             }
             &-2{
                 margin-left: 1rem;
+                hr{
+                    margin-right: 0px;
+                }
                 &__title{}
                 &__input{
                     &-1{
@@ -149,6 +160,9 @@ hr{
                 }
             }
             &-3{
+                hr{
+                    margin-right: 0px;
+                }
                 &__btn{
                     &-1{
                         width: fit-content;

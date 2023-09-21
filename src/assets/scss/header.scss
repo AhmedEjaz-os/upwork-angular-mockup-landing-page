@@ -1,5 +1,6 @@
 .header {
-    border: 6px solid #185e9b;
+  width: 80%;
+  margin: 0 auto;
   &-section {
     &-1 {
       &__title {
@@ -8,29 +9,26 @@
     }
     &-2 {
       &__title {}
-      &__logout{
-        color: #185e9b;
-        text-decoration: underline;
-      }
+      &__logout{}
     }
   }
 }
 
 @include media-breakpoint-down(sm) {
   .header {
-    border: 3px solid #185e9b;
+    width: 100%;
   &-section {
     &-1 {
       &__title {
-        font-size: 1.2rem;
+        font-size: 1rem
       }
     }
     &-2 {
       &__title {
-        font-size: 1rem;
+        font-size: 0.8rem
       }
       &__logout{
-        font-size: 0.8rem;
+        font-size: 0.6rem
       }
     }
   }

@@ -1,285 +1,309 @@
 // Button Stylings
 @mixin btn-primary {
-    border-radius: 0px !important;
-    padding: 1px 6px !important;
+  border-radius: 0px !important;
+  padding: 1px 6px !important;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  transition: 0.6s all ease-in-out;
+  &:hover {
     border: 2px solid black;
-    box-shadow: 4px 4px black;
-    transition: .6s all ease-in-out;
-    &:hover{
-        border: 2px solid black;
-        box-shadow: 4px -4px black;
-        cursor: pointer;
-    }
+    box-shadow: 4px -4px black;
+    cursor: pointer;
+  }
 }
 
-.homepage{
-    &-section{
-        &-1{
-            &__breadcrumbs{
-                text-decoration: underline;
-            }
-        }
-        &-2{
-            margin-left: 5rem;
-            width: fit-content;
-            hr{
-                margin-right: 6.1rem;
-            }
-            &__title{
-                font-size: 18px;
-            }
-            &__input{
-                &-1{
-                    grid-row-gap: 14px;
-                    &__label{
-                        width: 158px;
-                    }
-                    &__field{
-                        width: 284px;
-                        border: 3px solid black;
-                    }
-                    &__btn{
-                        @include btn-primary;
-                    }
-                }
-                &-2{
-                    grid-row-gap: 14px;
-                    &__label{
-                        text-align: end;
-                        width: 158px;
-                    }
-                    &__field{
-                        width: 284px;
-                        border: 3px solid black;
-                    }
-                    &__btn{
-                        &-1{
-                            @include btn-primary;
-                        }
-                        &-2{
-                            @include btn-primary;
-                            margin-left: 2.6rem;
-                        }
-                    }
-                }
-            }
-        }
-        &-3{
-            margin-left: 5rem;
-            width: fit-content;
-            hr{
-                margin-right: 7rem;
-            }
-            &__btn{
-                &-1{
-                    @include btn-primary;
-                    margin-left: 5rem;
-                }
-                &-2{
-                    @include btn-primary;
-                    margin-left: 5rem;
-                }
-            }
-        }
-        &-4{
-            margin-left: 5rem;
-            div{
-                div{
-                    margin-left: 10.86rem;
-                }
-            }
-            &__title{
-                @extend .mb-5;
-            }
-            &__field{
-                width: 284px;
-                border: 3px solid black;
-                &::placeholder{
-                    font-size: 18px;
-                    font-weight: bold;
-                }
-            }
-            &__btn{
-                @include btn-primary;
-            }
-        }
+.homepage {
+  width: 80%;
+  margin: 0 auto;
+  &-section {
+    &-1 {
+      &__breadcrumbs {
+        text-decoration: underline;
+      }
     }
-    &-select-menu{
-        margin-right: 9.4rem;
+    &-2 {
+      margin-left: 5rem;
+      width: fit-content;
+      hr {
+        margin-right: 6.1rem;
+      }
+      &__title {
+        font-size: 18px;
+      }
+      &__input {
+        &-1 {
+          grid-row-gap: 14px;
+          &__label {
+            width: 158px;
+          }
+          &__field {
+            width: 284px;
+            border: 3px solid black;
+          }
+          &__btn {
+            @include btn-primary;
+          }
+        }
+        &-2 {
+          grid-row-gap: 14px;
+          &__label {
+            text-align: end;
+            width: 158px;
+          }
+          &__field {
+            width: 284px;
+            border: 3px solid black;
+          }
+          &__btn {
+            &-1 {
+              @include btn-primary;
+            }
+            &-2 {
+              @include btn-primary;
+              margin-left: 2.6rem;
+            }
+          }
+        }
+      }
     }
+    &-3 {
+      margin-left: 5rem;
+      width: fit-content;
+      hr {
+        margin-right: 7rem;
+      }
+      &__btn {
+        &-1 {
+          @include btn-primary;
+          margin-left: 5rem;
+        }
+        &-2 {
+          @include btn-primary;
+          margin-left: 5rem;
+        }
+      }
+    }
+    &-4 {
+      margin-left: 5rem;
+      div {
+        div {
+          margin-left: 10.86rem;
+        }
+      }
+      &__title {
+        @extend .mb-5;
+      }
+      &__field {
+        width: 284px;
+        border: 3px solid black;
+        &::placeholder {
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+      &__btn {
+        @include btn-primary;
+      }
+    }
+  }
+  &-select-menu {
+    margin-right: 9.4rem;
+  }
 }
 
-hr{
-    border: 2px solid black
+hr {
+  border: 2px solid black;
 }
 
-@media (max-width: 576px){
-    .homepage{
-        &-select-menu{
-            margin-right: 0px !important;
-            .select-menu__parent{
-                width: fit-content;
-            }
-            &-2{
-                .select-menu__parent{
-                    width: fit-content;
-                }
-            }
+@media (max-width: 576px) {
+  .homepage {
+    &-select-menu {
+      margin-right: 0px !important;
+      .select-menu__parent {
+        width: fit-content;
+      }
+      &-2 {
+        .select-menu__parent {
+          width: fit-content;
         }
+      }
     }
+  }
 }
 
 @include media-breakpoint-down(sm) {
-    .homepage{
-        &-section{
-            &-1{
-                &__breadcrumbs{}
-            }
-            &-2{
-                margin-left: 1rem;
-                hr{
-                    margin-right: 0px;
-                }
-                &__title{}
-                &__input{
-                    &-1{
-                        &__label{}
-                        &__field{}
-                        &__btn{}
-                    }
-                    &-2{
-                        &__label{
-                            text-align: start;
-                        }
-                        &__field{}
-                        &__btn{
-                            &-1{}
-                            &-2{}
-                        }
-                    }
-                }
-            }
-            &-3{
-                hr{
-                    margin-right: 0px;
-                }
-                &__btn{
-                    &-1{
-                        width: fit-content;
-                        margin-left: 0px;
-                    }
-                    &-2{
-                        width: fit-content;
-                        margin-left: 0px;
-                    }
-                }
-            }
-            &-4{
-                &__title{}
-                &__field{
-                    &::placeholder{}
-                }
-                &__btn{
-                    margin-left: 0px !important;
-                    margin-top: 14px;
-                }
-            }
+  .homepage {
+    width: 100%;
+    &-section {
+      &-1 {
+        &__breadcrumbs {
         }
-        &-select-menu{
-            .select-menu__parent{
-                width: fit-content;
-            }
-            &-2{
-                .select-menu__parent{
-                    width: fit-content;
-                }
-            }
+      }
+      &-2 {
+        margin-left: 1rem;
+        hr {
+          margin-right: 0px;
         }
+        &__title {
+        }
+        &__input {
+          &-1 {
+            &__label {
+            }
+            &__field {
+            }
+            &__btn {
+            }
+          }
+          &-2 {
+            &__label {
+              text-align: start;
+            }
+            &__field {
+            }
+            &__btn {
+              &-1 {
+              }
+              &-2 {
+              }
+            }
+          }
+        }
+      }
+      &-3 {
+        hr {
+          margin-right: 0px;
+        }
+        &__btn {
+          &-1 {
+            width: fit-content;
+            margin-left: 0px;
+          }
+          &-2 {
+            width: fit-content;
+            margin-left: 0px;
+          }
+        }
+      }
+      &-4 {
+        &__title {
+        }
+        &__field {
+          &::placeholder {
+          }
+        }
+        &__btn {
+          margin-left: 0px !important;
+          margin-top: 14px;
+        }
+      }
     }
+    &-select-menu {
+      .select-menu__parent {
+        width: fit-content;
+      }
+      &-2 {
+        .select-menu__parent {
+          width: fit-content;
+        }
+      }
+    }
+  }
 }
 @include media-breakpoint-down(md) {
-    .homepage{
-        &-section{
-            &-1{
-                &__breadcrumbs{}
-            }
-            &-2{
-                margin-left: 1rem;
-                &__title{}
-                &__input{
-                    &-1{
-                        &__label{}
-                        &__field{
-                            width: 250px;
-                        }
-                        &__btn{}
-                    }
-                    &-2{
-                        &__label{}
-                        &__field{
-                            width: 250px;
-                        }
-                        &__btn{
-                            &-1{}
-                            &-2{
-                                margin-left: 1rem;
-                            }
-                        }
-                    }
-                }
-            }
-            &-3{
-                margin-left: 1rem;
-                &__btn{
-                    &-1{}
-                    &-2{}
-                }
-            }
-            &-4{
-                margin-left: 1rem;
-                &__title{}
-                &__field{
-                    width: 250px;
-                    &::placeholder{}
-                }
-                &__btn{}
-            }
+  .homepage {
+    &-section {
+      &-1 {
+        &__breadcrumbs {
         }
-        &-select-menu{
-            margin-right: 5.6rem;
+      }
+      &-2 {
+        margin-left: 1rem;
+        &__title {
         }
+        &__input {
+          &-1 {
+            &__label {
+            }
+            &__field {
+              width: 250px;
+            }
+            &__btn {
+            }
+          }
+          &-2 {
+            &__label {
+            }
+            &__field {
+              width: 250px;
+            }
+            &__btn {
+              &-1 {
+              }
+              &-2 {
+                margin-left: 1rem;
+              }
+            }
+          }
+        }
+      }
+      &-3 {
+        margin-left: 1rem;
+        &__btn {
+          &-1 {
+          }
+          &-2 {
+          }
+        }
+      }
+      &-4 {
+        margin-left: 1rem;
+        &__title {
+        }
+        &__field {
+          width: 250px;
+          &::placeholder {
+          }
+        }
+        &__btn {
+        }
+      }
     }
+    &-select-menu {
+      margin-right: 5.6rem;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    .homepage{
-        &-section{
-            &-3{
-                &__btn{
-                    &-1{
-                        margin-left: 0px !important;
-                    }
-                    &-2{
-                        margin-left: 0px !important;
-                    }
-                }
-            }
+  .homepage {
+    &-section {
+      &-3 {
+        &__btn {
+          &-1 {
+            margin-left: 0px !important;
+          }
+          &-2 {
+            margin-left: 0px !important;
+          }
         }
+      }
     }
+  }
 }
 @media (max-width: 1200px) {
-    .homepage{
-        &-section{
-            &-3{
-                &__btn{
-                    &-1{
-                        margin-left: 3rem;
-                    }
-                    &-2{
-                        margin-left: 3rem;
-                    }
-                }
-            }
+  .homepage {
+    &-section {
+      &-3 {
+        &__btn {
+          &-1 {
+            margin-left: 3rem;
+          }
+          &-2 {
+            margin-left: 3rem;
+          }
         }
+      }
     }
+  }
 }

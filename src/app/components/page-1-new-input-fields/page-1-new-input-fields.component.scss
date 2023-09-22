@@ -1,0 +1,31 @@
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+}
+
+.mat-input-underline{
+    display: none;
+}
+
+.mat-input-flex{
+    border: 1px solid rgba(0,0,0,.54);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-top: 14px;
+}
+
+.mat-form-field-infix{
+    border: 0px !important;
+}
+
+.mat-input-container {
+    width: 300px;
+}
+
+.mat-input-invalid{
+    .mat-input-wrapper{
+        .mat-input-flex{
+            border-color: red !important;
+        }
+    }
+}

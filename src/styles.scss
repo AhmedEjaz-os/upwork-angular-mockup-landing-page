@@ -2,92 +2,80 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./assets/scss/header.scss";
 @import "./assets/scss/homepage.scss";
-
+@import "./app/components/page-1-new-input-fields/page-1-new-input-fields.component.scss";
+@import "./assets/scss/fonts.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 // Global Components Stylings here...
-body{
-    padding: 30px 0;
-    background-image: url('./assets/images/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+body {
+  padding: 30px 0;
+  background-image: url("./assets/images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
-.top-level-parent{
-    background-color: #fff;
-    width: 80%;
+.top-level-parent {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  border-radius: 30px;
+  z-index: 9;
+}
+
+.select-menu {
+  width: 290px;
+  height: 200px;
+  border: 3px solid black;
+  overflow-y: scroll;
+  position: relative;
+  border-radius: 10px;
+  &__title {
+    width: fit-content;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    border-radius: 30px;
-    z-index: 9;
+  }
+  button {
+    text-align: start;
+    border: none !important;
+    color: white;
+    background-color: rgb(126, 126, 126);
+    &:active {
+      background-color: rgb(158, 158, 158);
+    }
+  }
 }
 
-.strip-1{
-    background-color: #dc3645;
-    position: absolute;
-    top: 0;
-    left: 460px;
-    rotate: 45deg;
-    width: 100%;
-    height: 200px;
-    z-index: -9;
-}
-.strip-2{
-    background-color: #dc3645;
-    position: absolute;
-    bottom: 0;
-    left: -460px;
-    rotate: 45deg;
-    width: 100%;
-    height: 200px;
-    z-index: -9;
-}
-.strip-3{
-    position: absolute;
-    top: -186px;
-    left: 10px;
-    border: 50px solid #dc3645;
-    border-radius: 300px;
-    height: 400px;
-    width: 400px;
-    z-index: -9;
-    
-}
-.strip-4{
-    position: absolute;
-    bottom: -186px;
-    right: 10px;
-    border: 50px solid #dc3645;
-    border-radius: 300px;
-    height: 400px;
-    width: 400px;
-    z-index: -9;
+.select-menu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
 }
 
-.select-menu{
-    width: 215px;
-    height: 151px;
-    border: 3px solid black;
-    overflow-y: scroll;
-    position: relative;
-    &__title{
-        width: fit-content;
-        margin: 0 auto;
-    }
-    button{
-        text-align: start;
-        border: 1px solid black !important;
-        &:active{
-            background-color: rgb(158, 158, 158);
-        }
-    }
+.select-menu::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.select-menu::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #2c4054),
+    color-stop(0.72, #203b57),
+    color-stop(0.86, #2c4054)
+  );
+}
+
+.btn-primary{
+  box-shadow: 0 6px 30px -10px #000;
 }
 
 @include media-breakpoint-down(sm) {
-    .top-level-parent{
-        width: 100%;
-    }
+  .top-level-parent {
+    width: 100%;
+  }
 }

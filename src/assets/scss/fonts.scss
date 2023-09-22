@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/src/assets/fonts/Poppins/Poppins-Black.ttf) format('TrueType'), 
+		 url(/src/assets/fonts/Poppins/Poppins-Bold.ttf) format('TrueType'),
+    	 url(/src/assets/fonts/Poppins/Poppins-ExtraBold.ttf) format('TrueType'),
+    	 url(/src/assets/fonts/Poppins/Poppins-ExtraLight.ttf) format('TrueType'),
+    	 url(/src/assets/fonts/Poppins/Poppins-Italic.ttf) format('TrueType'),
+    	 url(/src/assets/fonts/Poppins/Poppins-Light.ttf) format('TrueType'),
+    	 url(/src/assets/fonts/Poppins/Poppins-Medium.ttf) format('TrueType'),
+    	 url(/src/assets/fonts/Poppins/Poppins-Regular.ttf) format('TrueType'),
+    	 url(/src/assets/fonts/Poppins/Poppins-SemiBold.ttf) format('TrueType'),
+    	 url(/src/assets/fonts/Poppins/Poppins-Thin.ttf) format('TrueType');
+}
+
+h1, h2, h3, h4, h4, h5, li, p{
+    font-family: 'Poppins', sans-serif;
+}

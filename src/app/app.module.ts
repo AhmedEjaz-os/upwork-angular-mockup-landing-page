@@ -13,9 +13,18 @@ import { AngularMaterialDialogComponent } from './components/angular-material-di
 import { HeaderComponent } from './components/header/header.component';
 import { Page1Component } from './components/page-1/page-1.component';
 import { SelectMenuComponent } from './components/select-menu/select-menu.component';
+import { Page1NewInputFieldsComponent } from './components/page-1-new-input-fields/page-1-new-input-fields.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { NgIf } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const MaterialImportsArray = [
-  
+  FormsModule, 
+  MatFormFieldModule, 
+  MatInputModule, 
+  ReactiveFormsModule,
+  BrowserAnimationsModule
 ]
 @NgModule({
   declarations: [
@@ -24,13 +33,15 @@ const MaterialImportsArray = [
     HeaderComponent,
     Page1Component,
     SelectMenuComponent,
+    Page1NewInputFieldsComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ...MaterialImportsArray
   ],
-  providers: [],
+  providers: [NgIf],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

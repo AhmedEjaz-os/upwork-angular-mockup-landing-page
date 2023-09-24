@@ -6,12 +6,12 @@
         <h5 class="homepage-section-2__title text-uppercase">Go to an account using the Goldfire serial number OR
             License ID</h5>
         <div class="d-flex flex-column mt-5 align-items-start homepage-section-2__input-1">
-            <app-page-1-new-input-fields [label]="{title: 'Goldfire serial number'}"></app-page-1-new-input-fields>
+            <app-page-1-new-input-fields [label]="{title: 'Goldfire serial number'}" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
             <button class="btn btn-primary homepage-section-2__input-1__btn">View Account</button>
         </div>
         <div class="d-flex flex-column mt-5 align-items-start homepage-section-2__input-2">
             <div class="d-flex flex-column flex-sm-row">
-                <app-page-1-new-input-fields [label]="{title: 'License ID'}"></app-page-1-new-input-fields>
+                <app-page-1-new-input-fields [label]="{title: 'License ID'}" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
             </div>
             <div class="d-flex">
                 <button class="btn btn-primary homepage-section-2__input-2__btn-1 mr-3">View Account</button>
@@ -38,7 +38,7 @@
     <div class="homepage-section-4 mt-5">
         <h5 class="homepage-section-4__title text-uppercase">Create new company and add Goldfire accounts</h5>
         <div class="d-flex flex-column justify-content-center">
-            <app-page-1-new-input-fields [label]="{title: 'Enter company name'}"></app-page-1-new-input-fields>
+            <app-page-1-new-input-fields [label]="{title: 'Enter company name'}" [required]="false" [placeHolder]="{text: 'Please Enter a company name'}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
             <button class="homepage-section-4__btn btn btn-primary">New Company</button>
         </div>
     </div>

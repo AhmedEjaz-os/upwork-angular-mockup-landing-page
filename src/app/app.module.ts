@@ -25,8 +25,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { Page1Component } from './components/page-1/page-1.component';
 import { SelectMenuComponent } from './components/select-menu/select-menu.component';
 import { Page2Component } from './components/page-2/page-2.component';
-import { Page2InputFieldsComponent } from './components/page-2-input-fields/page-2-input-fields.component';
-import { Page2InputFieldsVerticleComponent } from './components/page-2-input-fields-verticle/page-2-input-fields-verticle.component';
 import { Page1NewInputFieldsComponent } from './components/page-1-new-input-fields/page-1-new-input-fields.component';
 import { MaterialCheckboxComponent } from './components/material-checkbox/material-checkbox.component';
 
@@ -49,8 +47,6 @@ const MaterialImportsArray = [
     Page1Component,
     SelectMenuComponent,
     Page2Component,
-    Page2InputFieldsComponent,
-    Page2InputFieldsVerticleComponent,
     Page1NewInputFieldsComponent,
     TextAreaComponent,
     MaterialCheckboxComponent,

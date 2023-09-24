@@ -7,7 +7,7 @@
       <h5 class="font-weight-bold new-account__section-2__title mb-5">Add New Account for "{{companyName}}" </h5>
       <div class="new-account__section-2__subFields">
         <app-page-1-new-input-fields *ngFor="let label of labels;" [label]="label"
-          class="new-account__section-2__input-fields"></app-page-1-new-input-fields>
+          class="new-account__section-2__input-fields" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
         <div class="d-flex justify-content-start justify-content-sm-end new-account__section-2__addititonal-contact">
           <button class="new-account__section-2__btn-1 btn btn-primary">Add Additional Contacts</button>
         </div>
@@ -15,12 +15,12 @@
           <app-text-area [label]="{title: 'Comments'}" class="account-page-input-fields__text-area"></app-text-area>
         </div>
         <app-page-1-new-input-fields [label]="{title: 'Goldfire Serial Number'}"
-          class="new-account__section-2__input-goldfire"></app-page-1-new-input-fields>
+          class="new-account__section-2__input-goldfire" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
         <div class="d-flex flex-column mb-3 mt-3">
           <app-material-checkbox [label]="{title: 'Maintenance'}"></app-material-checkbox>
         </div>
         <app-page-1-new-input-fields *ngFor="let verticalLabel of verticalLabels;" [label]="verticalLabel"
-          class="new-account__section-2__input-fields-vertical"></app-page-1-new-input-fields>
+          class="new-account__section-2__input-fields-vertical" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
         <div
           class="d-flex align-items-center flex-column flex-sm-row justify-content-end new-account-page-input-fields__next-button-row flex-wrap">
           <button class="btn text-dark new-account__section-2--button-row__btn-1 ml-3">Cancel</button>

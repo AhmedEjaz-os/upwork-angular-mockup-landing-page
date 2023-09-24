@@ -22,17 +22,20 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 })
 export class Page1NewInputFieldsComponent implements OnInit {
   @Input() label: any;
+  @Input() required: boolean;
+  @Input() placeHolder: any;
+  @Input() errorMessageForRequiredField: any;
   email = new FormControl('', [Validators.required, Validators.email]);
 
   constructor() { }
 
   ngOnInit() {}
+
   getErrorMessage() {
     if (this.email.hasError('required')) {
       return 'You must enter a value';
     }
-
-    return this.email.hasError('email') ? 'Not a valid email' : '';
+    return this.email.hasError('email') ? this.errorMessageForRequiredField.error : '';
   }
 
 }

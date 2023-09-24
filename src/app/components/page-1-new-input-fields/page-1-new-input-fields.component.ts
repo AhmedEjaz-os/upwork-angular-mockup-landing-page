@@ -25,6 +25,7 @@ export class Page1NewInputFieldsComponent implements OnInit {
   @Input() required: boolean;
   @Input() placeHolder: any;
   @Input() errorMessageForRequiredField: any;
+  @Input() hint: any;
   email = new FormControl('', [Validators.required, Validators.email]);
 
   constructor() { }

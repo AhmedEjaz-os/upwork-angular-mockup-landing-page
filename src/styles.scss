@@ -79,4 +79,49 @@
     }
 }
 
-@include media-breakpoint-down(sm) {}
+.additionalContactDialog{
+  &__btn{
+    width: 300px;
+  }
+  &__input{
+    &-1, &-2, &-3{
+      display: block;
+      width: fit-content;
+      .example-container{
+        width: fit-content;
+      }
+    }
+    &-1{}
+    &-2{}
+    &-3{}
+  }
+}
+
+.dialog-btn-grey{
+  @extend .new-account__section-2--button-row__btn-1;
+  border: none !important;
+  box-shadow: 0 36px 10px 0px #000 !important;
+  &:hover{
+    background-color: #999 !important;
+    border: none !important;
+  }
+}
+
+.dialog-btn-primary{
+  box-shadow: 0 36px 10px 0px #000;
+}
+
+.cdk-overlay-container{
+  .mat-dialog-container{
+    padding: 0px !important;
+    width: 500px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .cdk-overlay-container{
+    .mat-dialog-container{
+      width: 320px;
+    }
+  }
+}

@@ -27,7 +27,8 @@ import { SelectMenuComponent } from './components/select-menu/select-menu.compon
 import { Page2Component } from './components/page-2/page-2.component';
 import { Page1NewInputFieldsComponent } from './components/page-1-new-input-fields/page-1-new-input-fields.component';
 import { MaterialCheckboxComponent } from './components/material-checkbox/material-checkbox.component';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const MaterialImportsArray = [
   FormsModule, 
@@ -37,7 +38,9 @@ const MaterialImportsArray = [
   BrowserAnimationsModule,
   MatIconModule,
   MatToolbarModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatButtonModule,
+  MatDialogModule
 ]
 @NgModule({
   declarations: [

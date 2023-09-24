@@ -4,5 +4,6 @@
     <input *ngIf="required" matInput placeholder={{placeHolder?.text}} [formControl]="email"  required>
     <input *ngIf="!required" matInput placeholder={{placeHolder?.text}} [formControl]="email">
     <mat-error *ngIf="email.invalid && required" class="ml-2">{{getErrorMessage()}}</mat-error>
+    <mat-hint *ngIf="hint">{{hint.message}}</mat-hint>
   </mat-form-field>
 </div>

@@ -16,9 +16,10 @@
         &-2{
             &__subFields{
                 display: grid;
+                flex-wrap: wrap;
                 grid-template-columns: 50% 50%;
                 grid-gap: 10px;
-                width: 80%;
+                width: 100%;
                 margin: 0 auto !important;
                 .account-page-input-fields {
                     &__text-area{
@@ -36,6 +37,13 @@
                     width: fit-content;
                 }
                 &-goldfire{
+                    &--checkbox{
+                        width: 300px;
+                        .example-section{
+                            margin: 0 0 0 auto;
+                            width: fit-content;
+                        }
+                    }
                     .account-page-input-fields {
                         margin-bottom: 0px !important;
                         &__text-area{
@@ -90,6 +98,48 @@
     }
 }
 
+@media (min-width: 768px){
+    .new-account{
+        &-page-input-fields{
+            &__last-row{
+            }
+            &__next-button-row{
+            }
+        }
+        &__section{
+            &-1{
+                &__breadcrumbs{}
+            }
+            &-2{
+                &__subFields{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .new-account{
+        &-page-input-fields{
+            &__last-row{
+            }
+            &__next-button-row{
+            }
+        }
+        &__section{
+            &-1{
+                &__breadcrumbs{}
+            }
+            &-2{
+                &__subFields{
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
 
 @include media-breakpoint-down(sm) {
     .new-account__section-2__btn-1{
@@ -98,8 +148,20 @@
     .new-account{
         margin-bottom: 6rem;
         &-page-input-fields{
-            &__last-row{}
-            &__next-button-row{}
+            &__last-row{
+            }
+            &__next-button-row{
+            }
+        }
+        &__section{
+            &-1{
+                &__breadcrumbs{}
+            }
+            &-2{
+                &__subFields{
+                    grid-template-columns: 100%;
+                }
+            }
         }
     }
 }

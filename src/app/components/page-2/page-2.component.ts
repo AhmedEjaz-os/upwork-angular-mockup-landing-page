@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AngularMaterialDialogComponent } from '../angular-material-dialog/angular-material-dialog.component';
 
 @Component({
   selector: 'app-page-2',
@@ -11,48 +13,106 @@ export class Page2Component implements OnInit {
   verticalLabels: any;
   goldFireLabel: string = "Goldfire Serial Number";
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit() {
     this.labels = [
       {
-        title: "Account Name"
+        label: {
+          title: "Account Name",
+        },
+        required: true,
+        placeholder: {
+          text: ''
+        },
       },
       {
-        title: "Account Number"
+        label: {
+          title: "Account Number",
+        },
+        required: true,
+        placeholder: {
+          text: ''
+        }
       },
       {
-        title: "Contact Name"
+        label: {
+          title: "Contact Name",
+        },
+        required: true,
+        placeholder: {
+          text: ''
+        }
       },
       {
-        title: "Email"
+        label: {
+          title: "Email",
+        },
+        required: true,
+        placeholder: {
+          text: ''
+        }
       },
       {
-        title: "Phone"
+        label: {
+          title: "Phone",
+        },
+        required: true,
+        placeholder: {
+          text: ''
+        }
       }
     ]
     this.verticalLabels = [
       {
-        title: "Starts",
-        align: "center",
-        marginBottom: "1.4rem"
+        label: {
+          title: "Starts",
+        },
+        required: true,
+        placeholder: {
+          text: ''
+        }
       },
       {
-        title: "Expires",
-        align: "center",
-        marginBottom: "1.4rem"
+        label: {
+          title: "Expires",
+        },
+        required: true,
+        placeholder: {
+          text: ''
+        }
       },
       {
-        title: "Max number of automatic registration changes",
-        align: "start",
-        marginBottom: "4.4rem"
+        label: {
+          title: "Max number of automatic registration changes",
+        },
+        required: false,
+        placeholder: {
+          text: ''
+        }
       },
       {
-        title: "Delay for automatic registration changes in hours",
-        align: "start",
-        marginBottom: "4.4rem"
+        label: {
+          title: "Delay for automatic registration changes in hours",
+        },
+        required: false,
+        placeholder: {
+          text: ''
+        }
       }
     ]
   }
+
+  openDialog() {
+    this.dialog.open(AngularMaterialDialogComponent, {
+      data: {
+        title: 'Additional Contact',
+        html: "additionalContactDialog"
+      }
+    });
+  }
+
 
 }

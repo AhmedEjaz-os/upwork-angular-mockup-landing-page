@@ -1,52 +1,45 @@
-<div class="homepage mb-3 mr-3">
-    <div class="homepage-section-1">
+<div class="homepage">
+    <div class="homepage-section-1 ml-4">
         <p><a href="/" class="homepage-section-1__breadcrumbs">Home</a> > <span>...</span></p>
     </div>
     <div class="homepage-section-2">
-        <h5 class="font-weight-bold homepage-section-2__title">Go to an account using the Goldfire serial number OR
+        <h5 class="homepage-section-2__title text-uppercase">Go to an account using the Goldfire serial number OR
             License ID</h5>
-        <div class="d-flex flex-column flex-md-row mt-5 align-items-start align-items-md-center homepage-section-2__input-1">
-            <div class="d-flex flex-column flex-sm-row">
-                <p class="m-0 homepage-section-2__input-1__label mr-3 mb-3 mb-sm-0">Goldfire serial number</p>
-                <input type="text" class="homepage-section-2__input-1__field" />
-            </div>
-            <button class="ml-xl-5 ml-md-3 btn btn-primary homepage-section-2__input-1__btn">View Account</button>
+        <div class="d-flex flex-column mt-5 align-items-start homepage-section-2__input-1">
+            <app-page-1-new-input-fields [label]="{title: 'Goldfire serial number'}"></app-page-1-new-input-fields>
+            <button class="btn btn-primary homepage-section-2__input-1__btn">View Account</button>
         </div>
-        <div class="d-flex flex-column flex-md-row mt-5 align-items-start align-items-md-center homepage-section-2__input-2">
+        <div class="d-flex flex-column mt-5 align-items-start homepage-section-2__input-2">
             <div class="d-flex flex-column flex-sm-row">
-                <p class="m-0 homepage-section-2__input-2__label mr-3 mb-3 mb-sm-0">License ID </p>
-                <input type="text" class="homepage-section-2__input-2__field" />
+                <app-page-1-new-input-fields [label]="{title: 'License ID'}"></app-page-1-new-input-fields>
             </div>
             <div class="d-flex">
-                <button class="ml-xl-5 ml-md-3 btn btn-primary homepage-section-2__input-2__btn-1">View Account</button>
+                <button class="btn btn-primary homepage-section-2__input-2__btn-1 mr-3">View Account</button>
                 <button class="btn btn-primary homepage-section-2__input-2__btn-2">Edit License</button>
             </div>
         </div>
-        <hr class="text-dark mt-5" />
     </div>
-    <div class="homepage-section-3">
-        <h5 class="font-weight-bold homepage-section-2__title">Go to an account using the company name AND Goldfire
+    <div class="homepage-section-3 mt-5">
+        <h5 class="homepage-section-2__title text-uppercase">Go to an account using the company name AND Goldfire
             account</h5>
-        <div class="d-flex flex-column flex-md-row mt-3">
+        <div class="d-flex flex-column mt-3">
             <div class="d-flex flex-column flex-sm-row justify-content-between justify-content-md-start align-items-start align-items-sm-center">
                 <app-select-menu class="homepage-select-menu" [menuHeading]="selectMenuHeadingOne"
                     [button]="selectMenuHeadingOneArray"></app-select-menu>
                 <app-select-menu [menuHeading]="selectMenuHeadingTwo" [button]="selectMenuHeadingTwoArray" class="homepage-select-menu-2 mt-3 mt-md-0">
                 </app-select-menu>
             </div>
-            <div class="d-flex flex-row flex-md-column justify-content-between justify-content-md-between pt-4">
-                <button class="btn btn-primary homepage-section-3__btn-1">View Account</button>
-                <a href="/new-account" class="btn btn-primary homepage-section-3__btn-2 ">New Account</a>
+            <div class="d-flex align-items-center pt-4">
+                <button class="btn btn-primary homepage-section-3__btn-1 mr-3">View Account</button>
+                <a href="/new-account" class="btn btn-primary homepage-section-3__btn-2">New Account</a>
             </div>
         </div>
-        <hr class="text-dark mt-5" />
     </div>
-    <div class="homepage-section-4">
-        <h5 class="font-weight-bold homepage-section-4__title">Create new company and add Goldfire accounts</h5>
-        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center">
-            <div class="d-none d-md-block"></div>
-            <input type="text" class="homepage-section-4__field" placeholder="Enter company name" />
-            <button class="homepage-section-4__btn btn btn-primary ml-xl-5 ml-3">New Company</button>
+    <div class="homepage-section-4 mt-5">
+        <h5 class="homepage-section-4__title text-uppercase">Create new company and add Goldfire accounts</h5>
+        <div class="d-flex flex-column justify-content-center">
+            <app-page-1-new-input-fields [label]="{title: 'Enter company name'}"></app-page-1-new-input-fields>
+            <button class="homepage-section-4__btn btn btn-primary">New Company</button>
         </div>
     </div>
 </div>

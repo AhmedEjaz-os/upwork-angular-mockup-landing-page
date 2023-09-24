@@ -3,27 +3,60 @@
 @import "./assets/scss/header.scss";
 @import "./assets/scss/homepage.scss";
 @import "./assets/scss/newaccountpage.scss";
-
+@import "./app/components/page-1-new-input-fields/page-1-new-input-fields.component.scss";
+@import "./assets/scss/fonts.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 // Global Components Stylings here...
-.select-menu{
-    width: 215px;
-    height: 151px;
-    border: 3px solid black;
-    overflow-y: scroll;
-    position: relative;
-    scrollbar-color: rebeccapurple;
-    &__title{
-        width: fit-content;
-        margin: 0 auto;
+.top-level-parent {
+  padding-bottom: 60px;
+}
+
+.select-menu {
+  width: 290px;
+  height: 200px;
+  border: 3px solid black;
+  overflow-y: scroll;
+  position: relative;
+  border-radius: 10px;
+  &__title {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  button {
+    text-align: start;
+    border: none !important;
+    color: white;
+    background-color: rgb(126, 126, 126);
+    &:active {
+      background-color: rgb(158, 158, 158);
     }
-    button{
-        text-align: start;
-        border: 1px solid black !important;
-        &:active{
-            background-color: rgb(158, 158, 158);
-        }
-    }
+  }
+}
+
+.select-menu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+.select-menu::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.select-menu::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #2c4054),
+    color-stop(0.72, #203b57),
+    color-stop(0.86, #2c4054)
+  );
+}
+
+.btn-primary{
+  box-shadow: 0 6px 30px -10px #000;
 }
 
 .account-page-input-fields{
@@ -45,3 +78,5 @@
         border: 3px solid black;
     }
 }
+
+@include media-breakpoint-down(sm) {}

@@ -16,9 +16,23 @@ import { SelectMenuComponent } from './components/select-menu/select-menu.compon
 import { Page2Component } from './components/page-2/page-2.component';
 import { Page2InputFieldsComponent } from './components/page-2-input-fields/page-2-input-fields.component';
 import { Page2InputFieldsVerticleComponent } from './components/page-2-input-fields-verticle/page-2-input-fields-verticle.component';
+import { Page1NewInputFieldsComponent } from './components/page-1-new-input-fields/page-1-new-input-fields.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { NgIf } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 
 const MaterialImportsArray = [
-  
+  FormsModule, 
+  MatFormFieldModule, 
+  MatInputModule, 
+  ReactiveFormsModule,
+  BrowserAnimationsModule,
+  MatIconModule,
+  MatToolbarModule
 ]
 @NgModule({
   declarations: [
@@ -30,13 +44,15 @@ const MaterialImportsArray = [
     Page2Component,
     Page2InputFieldsComponent,
     Page2InputFieldsVerticleComponent,
+    Page1NewInputFieldsComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ...MaterialImportsArray
   ],
-  providers: [],
+  providers: [NgIf],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

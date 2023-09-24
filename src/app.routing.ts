@@ -6,7 +6,8 @@ import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 // Component Imports
 import { AngularMaterialDialogComponent } from "./app/components/angular-material-dialog/angular-material-dialog.component";
 import { Page1Component } from "./app/components/page-1/page-1.component";
-import { Page2Component } from "./app/components/page-2/page-2.component";
+import { SelectMenuComponent } from "./app/components/select-menu/select-menu.component";
+import { Page1NewInputFieldsComponent } from "./app/components/page-1-new-input-fields/page-1-new-input-fields.component";
 
 const routes: Routes = [
   {
@@ -18,10 +19,7 @@ const routes: Routes = [
   },
   {
     path: "new-account",
-    component: Page2Component,
-    data: {
-      breadcrumb: "Add New Account",
-    },
+    component: Page1NewInputFieldsComponent,
   },
   {
     path: "post",

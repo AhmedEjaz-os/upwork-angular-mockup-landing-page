@@ -5,10 +5,8 @@
             width: fit-content;
         }
         &__next-button-row{
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-            left: unset;
+            width: 300px;
+            height: fit-content;
         }
     }
     &__section{
@@ -17,8 +15,20 @@
         }
         &-2{
             &__subFields{
-                display: block;
-                width: fit-content;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-gap: 10px;
+                width: 80%;
+                margin: 0 auto !important;
+                .account-page-input-fields {
+                    &__text-area{
+                        .mat-input-flex{
+                            padding-left: 8px !important;
+                            padding-right: 8px;
+                            padding-bottom: 8px !important;
+                        }
+                    }
+                }
             }
             &__input{
                 &-fields{
@@ -28,30 +38,31 @@
                 &-goldfire{
                     .account-page-input-fields {
                         margin-bottom: 0px !important;
+                        &__text-area{
+                            .mat-input-flex ::ng-deep{
+                                padding-right: 10px;
+                                padding-bottom: 14px !important;
+                            }
+                        }
                     }
                 }
             }
+            &__addititonal-contact{
+                width: 300px;
+                height: fit-content;
+            }
             &__btn{
                 &-1{
-                    @include btn-primary;
                     margin: 0 0 0 auto;
                 }
             }
             &--button-row{
                 &__btn{
                     &-1{
-                        @include btn-primary;
                         background-color: #999;
-                        margin-right: 3.4rem;
                     }
-                    &-2{
-                        @include btn-primary;
-                        margin-right: 2rem;
-                    }
-                    &-3{
-                        @include btn-primary;
-                        margin-right: 7.2rem;
-                    }
+                    &-2{}
+                    &-3{}
                 }
             }
         }
@@ -66,12 +77,7 @@
         margin-bottom: 6rem;
         &-page-input-fields{
             &__last-row{}
-            &__next-button-row{
-                bottom: -70px;
-                right: unset;
-                left: 0px;
-                align-items: unset !important;
-            }
+            &__next-button-row{}
         }
     }
 }

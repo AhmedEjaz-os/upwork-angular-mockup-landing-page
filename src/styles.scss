@@ -1,11 +1,11 @@
 // src/sass/styles.scss
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "./assets/scss/header.scss";
 @import "./assets/scss/homepage.scss";
 @import "./assets/scss/newaccountpage.scss";
 @import "./app/components/page-1-new-input-fields/page-1-new-input-fields.component.scss";
 @import "./assets/scss/fonts.scss";
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 // Global Components Stylings here...
 .top-level-parent {

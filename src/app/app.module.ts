@@ -7,6 +7,17 @@ import { AppRoutingModule } from '../app.routing';
 // Bootstrap Import
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+// Material Import
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { NgIf, NgForOf } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { TextAreaComponent } from './components/text-area/text-area.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
+
 // Component Imports
 import { AppComponent } from './app.component';
 import { AngularMaterialDialogComponent } from './components/angular-material-dialog/angular-material-dialog.component';
@@ -17,12 +28,7 @@ import { Page2Component } from './components/page-2/page-2.component';
 import { Page2InputFieldsComponent } from './components/page-2-input-fields/page-2-input-fields.component';
 import { Page2InputFieldsVerticleComponent } from './components/page-2-input-fields-verticle/page-2-input-fields-verticle.component';
 import { Page1NewInputFieldsComponent } from './components/page-1-new-input-fields/page-1-new-input-fields.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule, MatInputModule } from '@angular/material';
-import { NgIf } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MaterialCheckboxComponent } from './components/material-checkbox/material-checkbox.component';
 
 
 const MaterialImportsArray = [
@@ -32,7 +38,8 @@ const MaterialImportsArray = [
   ReactiveFormsModule,
   BrowserAnimationsModule,
   MatIconModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatCheckboxModule
 ]
 @NgModule({
   declarations: [
@@ -45,6 +52,8 @@ const MaterialImportsArray = [
     Page2InputFieldsComponent,
     Page2InputFieldsVerticleComponent,
     Page1NewInputFieldsComponent,
+    TextAreaComponent,
+    MaterialCheckboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +61,7 @@ const MaterialImportsArray = [
     AppRoutingModule,
     ...MaterialImportsArray
   ],
-  providers: [NgIf],
+  providers: [NgIf, NgForOf],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

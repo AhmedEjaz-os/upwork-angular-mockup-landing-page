@@ -2,34 +2,32 @@
   <div class="new-account__section-1">
     <p><a href="/" class="new-account__section-1__breadcrumbs">Home</a> > <span>Add New Account</span></p>
   </div>
-  <div class="new-account__section-2 ml-3 ml-sm-5 mt-5">
-    <h5 class="font-weight-bold new-account__section-2__title">Add New Account for "{{companyName}}" </h5>
-    <div class="new-account__section-2__subFields ml-0 ml-sm-5 mt-5">
-        <app-page-2-input-fields *ngFor="let label of labels;" [Label]="label?.title" class="new-account__section-2__input-fields"></app-page-2-input-fields>
-        <div class="w-100 d-flex justify-content-start justify-content-sm-end ">
+  <div class="w-100">
+    <div class="new-account__section-2 ml-3 ml-sm-5 mt-5">
+      <h5 class="font-weight-bold new-account__section-2__title mb-5">Add New Account for "{{companyName}}" </h5>
+      <div class="new-account__section-2__subFields">
+        <app-page-1-new-input-fields *ngFor="let label of labels;" [label]="label"
+          class="new-account__section-2__input-fields"></app-page-1-new-input-fields>
+        <div class="d-flex justify-content-start justify-content-sm-end new-account__section-2__addititonal-contact">
           <button class="new-account__section-2__btn-1 btn btn-primary">Add Additional Contacts</button>
         </div>
         <div class="d-flex account-page-input-fields mb-3 align-items-start flex-column flex-sm-row mt-5">
-          <p class="account-page-input-fields__title font-weight-bold mb-0">Comments</p>
-          <textarea name="" id="" cols="30" rows="10" class="account-page-input-fields__input"></textarea>
+          <app-text-area [label]="{title: 'Comments'}" class="account-page-input-fields__text-area"></app-text-area>
+        </div>
+        <app-page-1-new-input-fields [label]="{title: 'Goldfire Serial Number'}"
+          class="new-account__section-2__input-goldfire"></app-page-1-new-input-fields>
+        <div class="d-flex flex-column mb-3 mt-3">
+          <app-material-checkbox [label]="{title: 'Maintenance'}"></app-material-checkbox>
+        </div>
+        <app-page-1-new-input-fields *ngFor="let verticalLabel of verticalLabels;" [label]="verticalLabel"
+          class="new-account__section-2__input-fields-vertical"></app-page-1-new-input-fields>
+        <div
+          class="d-flex align-items-center flex-column flex-sm-row justify-content-end new-account-page-input-fields__next-button-row flex-wrap">
+          <button class="btn text-dark new-account__section-2--button-row__btn-1 ml-3">Cancel</button>
+          <button class="btn btn-primary new-account__section-2--button-row__btn-2 ml-3">Add License</button>
+          <button class="btn btn-primary new-account__section-2--button-row__btn-3 ml-3">Finish</button>
         </div>
       </div>
-      <div class="d-flex flex-column position-relative justify-content-end new-account-page-input-fields__last-row">
-        <div class="d-flex flex-wrap align-items-center ml-0 ml-sm-5 mb-3">
-          <app-page-2-input-fields [Label]="goldFireLabel" class="new-account__section-2__input-goldfire"></app-page-2-input-fields>
-          <div class="d-flex flex-column ml-3 mb-3 mr-3 mt-3 mt-md-0">
-            <p class="mb-0">Maintenance</p>
-            <input type="checkbox" style="cursor: pointer" class="mt-2" />
-          </div>
-          <div class="d-flex flex-wrap align-items-center">
-            <app-page-2-input-fields-verticle *ngFor="let verticalLabel of verticalLabels;" [Label]="verticalLabel?.title" [align]="verticalLabel?.align" [marginBottom]="verticalLabel?.marginBottom" class="new-account__section-2__input-fields-vertical"></app-page-2-input-fields-verticle>
-          </div>
-        </div>
-        <div class="d-flex align-items-center flex-column flex-sm-row justify-content-end new-account-page-input-fields__next-button-row flex-wrap">
-          <button class="btn text-dark new-account__section-2--button-row__btn-1">Cancel</button>
-          <button class="btn btn-primary new-account__section-2--button-row__btn-2 mt-3 mt-sm-0">Add License</button>
-          <button class="btn btn-primary new-account__section-2--button-row__btn-3 mt-3 mt-sm-0">Finish</button>
-        </div>
-      </div>
+    </div>
   </div>
 </div>

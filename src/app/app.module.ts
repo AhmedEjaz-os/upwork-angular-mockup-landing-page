@@ -18,13 +18,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import { NgIf } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 
 const MaterialImportsArray = [
   FormsModule, 
   MatFormFieldModule, 
   MatInputModule, 
   ReactiveFormsModule,
-  BrowserAnimationsModule
+  BrowserAnimationsModule,
+  MatIconModule,
+  MatToolbarModule
 ]
 @NgModule({
   declarations: [

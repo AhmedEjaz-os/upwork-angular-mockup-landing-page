@@ -13,8 +13,6 @@
 }
 
 .homepage {
-  width: 80%;
-  margin: 0 auto;
   &-section {
     &-1 {
       &__breadcrumbs {
@@ -92,7 +90,6 @@
 
 @include media-breakpoint-down(sm) {
   .homepage {
-    width: 100%;
     &-section {
       &-1 {
         &__breadcrumbs {

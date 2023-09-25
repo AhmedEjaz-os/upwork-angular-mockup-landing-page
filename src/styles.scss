@@ -125,6 +125,13 @@
     width: 500px;
   }
 }
+.cdk-overlay-container:has(.mat-menu-panel){
+  .cdk-overlay-pane{
+    max-width: unset !important;
+    width: unset !important;
+    margin-top: 50px;
+  }
+}
 
 @include media-breakpoint-down(sm) {
   .cdk-overlay-container{

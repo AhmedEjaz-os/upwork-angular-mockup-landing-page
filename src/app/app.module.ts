@@ -29,6 +29,8 @@ import { Page1NewInputFieldsComponent } from './components/page-1-new-input-fiel
 import { MaterialCheckboxComponent } from './components/material-checkbox/material-checkbox.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 const MaterialImportsArray = [
   FormsModule, 
@@ -40,7 +42,8 @@ const MaterialImportsArray = [
   MatToolbarModule,
   MatCheckboxModule,
   MatButtonModule,
-  MatDialogModule
+  MatDialogModule,
+  MatMenuModule
 ]
 @NgModule({
   declarations: [

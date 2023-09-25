@@ -1,11 +1,22 @@
 <mat-toolbar color="primary" class="header mb-5">
   <mat-toolbar-row class="header-section-1">
-    <p class="header-section-1__title mb-0">GoldFire License Manager</p>
+    <p class="header-section-1__title mb-0">Goldfire License Manager</p>
     <span class="example-spacer"></span>
-    <div class="d-flex align-items-center">
-      <mat-icon class="example-icon mr-3" aria-hidden="false" aria-label="Example heart icon">account_circle</mat-icon>
-      <a href="#" class="text-decoration-none text-white h5 header-section-2__title mb-0 mr-sm-3 mr-1">Evan Shelby</a>
+    <div class="d-none d-md-flex">
+      <div class="d-flex align-items-center">
+        <mat-icon class="example-icon mr-3" aria-hidden="false" aria-label="Example heart icon">account_circle
+        </mat-icon>
+        <a href="#" class="text-decoration-none text-white h5 header-section-2__title mb-0 mr-sm-3 mr-1">Evan Shelby</a>
+      </div>
+      <a href="#"
+        class="header-section-2__logout font-weight-bold btn btn-danger text-white text-decoration-none">Logout</a>
     </div>
-    <a href="#" class="header-section-2__logout font-weight-bold btn btn-danger text-white text-decoration-none">Logout</a>
+    <div class="d-flex d-md-none">
+      <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>

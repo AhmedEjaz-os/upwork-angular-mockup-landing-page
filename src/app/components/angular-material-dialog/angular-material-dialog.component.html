@@ -3,8 +3,8 @@
   <app-page-1-new-input-fields [label]="{title: 'Contact Name'}" class='additionalContactDialog__input-1 mt-5' [required]='true' [placeHolder]="{text: 'Enter Contact Name'}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
   <app-page-1-new-input-fields [label]="{title: 'Email'}" class='additionalContactDialog__input-2 mt-3' [required]='true' [placeHolder]="{text: 'Enter Contact Email'}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
   <app-page-1-new-input-fields [label]="{title: 'Phone'}" class='additionalContactDialog__input-3 mt-3 mb-3' [required]='false' [placeHolder]="{text: 'Enter Contact Phone Number'}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
-  <div class="d-flex align-items-center justify-content-end additionalContactDialog__btn">
-    <button class="dialog-btn-grey btn btn-primary mr-3 text-dark">Cancel</button>
-    <button class="dialog-btn-primary btn btn-primary">Save</button>
+  <div class="d-flex align-items-center justify-content-end additionalContactDialog__btn pr-1">
+    <button class="dialog-btn-grey btn btn-primary mr-3 text-dark" aria-label="close dialog" mat-dialog-close>Cancel</button>
+    <button class="dialog-btn-primary btn btn-primary" >Save</button>
   </div>
 </div>

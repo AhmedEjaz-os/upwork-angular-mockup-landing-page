@@ -30,6 +30,7 @@ import { MaterialCheckboxComponent } from './components/material-checkbox/materi
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
+import { Page3Component } from './components/page-3/page-3.component';
 
 
 const MaterialImportsArray = [
@@ -56,6 +57,7 @@ const MaterialImportsArray = [
     Page1NewInputFieldsComponent,
     TextAreaComponent,
     MaterialCheckboxComponent,
+    Page3Component,
   ],
   imports: [
     BrowserModule,

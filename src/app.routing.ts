@@ -4,9 +4,9 @@ import { Routes, RouterModule } from "@angular/router";
 import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 
 // Component Imports
-import { AngularMaterialDialogComponent } from "./app/components/angular-material-dialog/angular-material-dialog.component";
 import { Page1Component } from "./app/components/page-1/page-1.component";
 import { Page2Component } from "./app/components/page-2/page-2.component";
+import { Page3Component } from "./app/components/page-3/page-3.component";
 
 const routes: Routes = [
   {
@@ -21,8 +21,8 @@ const routes: Routes = [
     component: Page2Component,
   },
   {
-    path: "post",
-    component: AngularMaterialDialogComponent,
+    path: "edit-license",
+    component: Page3Component,
   },
 ];
 @NgModule({

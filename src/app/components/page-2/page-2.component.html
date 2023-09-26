@@ -7,7 +7,7 @@
       <h5 class="font-weight-bold new-account__section-2__title mb-5">Add New Account for "{{companyName}}" </h5>
       <div class="new-account__section-2__subFields">
         <app-page-1-new-input-fields *ngFor="let label of labels;" [type]="label.type" [label]="label.label"
-          class="new-account__section-2__input-fields" [required]="label.required" [placeHolder]="label.placeholder"
+          class="new-account__section-2__input-fields hideNumberScroll" [required]="label.required" [placeHolder]="label.placeholder"
           [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
         <div class="d-flex justify-content-start justify-content-sm-end new-account__section-2__addititonal-contact">
           <button (click)="openDialog()" class="new-account__section-2__btn-1 btn btn-primary">Add Additional
@@ -17,22 +17,22 @@
           <app-text-area [label]="{title: 'Comments'}" class="account-page-input-fields__text-area"></app-text-area>
         </div>
         <div class="d-flex account-page-vertical-input-fields align-items-center flex-wrap">
-          <app-page-1-new-input-fields [type]="{inpType: 'text'}" [label]="{title: 'Serial Number'}" class="new-account__section-2__input-goldfire"
+          <app-page-1-new-input-fields [type]="{inpType: 'number'}" [label]="{title: 'Serial Number'}" class="new-account__section-2__input-goldfire hideNumberScroll"
             [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}">
           </app-page-1-new-input-fields>
           <div class="d-flex flex-column mb-3 mt-3 new-account__section-2__input-goldfire--checkbox">
             <app-material-checkbox [label]="{title: 'Maintenance'}"></app-material-checkbox>
           </div>
           <app-page-1-new-input-fields *ngFor="let verticalLabel of verticalLabels;" [type]="verticalLabel.type" [label]="verticalLabel.label"
-            class="new-account__section-2__input-fields-vertical" [required]="verticalLabel.required"
+            class="new-account__section-2__input-fields-vertical" [val]="verticalLabel?.val" [required]="verticalLabel.required"
             [placeHolder]="verticalLabel.placeholder" [errorMessageForRequiredField]="{error: ''}">
           </app-page-1-new-input-fields>
         </div>
         <div
           class="d-flex align-items-start align-items-md-center flex-column flex-md-row justify-content-end new-account-page-input-fields__next-button-row flex-wrap">
-          <button class="btn text-dark new-account__section-2--button-row__btn-1">Cancel</button>
-          <button class="btn btn-primary new-account__section-2--button-row__btn-2">Add License</button>
-          <button class="btn btn-primary new-account__section-2--button-row__btn-3">Finish</button>
+          <button class="btn text-dark new-account__section-2--button-row__btn-1 mr-0 mr-md-3">Cancel</button>
+          <a href="edit-license" class="btn btn-primary new-account__section-2--button-row__btn-2 text-white text-decoration-none r-0 mr-md-3 mt-3 mt-md-0">Add License</a>
+          <button class="btn btn-primary new-account__section-2--button-row__btn-3 mt-3 mt-md-0">Finish</button>
         </div>
       </div>
     </div>

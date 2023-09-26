@@ -40,7 +40,7 @@ export class Page2Component implements OnInit {
           text: ''
         },
         type: {
-          inpType: 'text'
+          inpType: 'number'
         },
       },
       {
@@ -76,7 +76,7 @@ export class Page2Component implements OnInit {
           text: ''
         },
         type: {
-          inpType: 'text'
+          inpType: 'number'
         },
       }
     ]
@@ -114,7 +114,10 @@ export class Page2Component implements OnInit {
           text: ''
         },
         type: {
-          inpType: 'text'
+          inpType: 'number'
+        },
+        val: {
+          value: 1,
         },
       },
       {
@@ -126,7 +129,10 @@ export class Page2Component implements OnInit {
           text: ''
         },
         type: {
-          inpType: 'text'
+          inpType: 'number'
+        },
+        val: {
+          value: 1,
         },
       }
     ]

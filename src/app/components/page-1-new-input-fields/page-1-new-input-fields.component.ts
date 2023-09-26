@@ -27,8 +27,12 @@ export class Page1NewInputFieldsComponent implements OnInit {
   @Input() errorMessageForRequiredField: any;
   @Input() hint: any;
   @Input() type: any;
+  @Input() val: any;
+  @Input() disable: boolean;
   email = new FormControl('', [Validators.required, Validators.email]);
   text = new FormControl('', [Validators.required, Validators.nullValidator]);
+  number = new FormControl('', [Validators.required, Validators.nullValidator]);
+  date = new FormControl('', [Validators.required, Validators.nullValidator]);
 
   constructor() { }
 
@@ -43,7 +47,17 @@ export class Page1NewInputFieldsComponent implements OnInit {
         return this.email.hasError('email') ? "Email must be in email format abc@xyz.com": '';
       }
       else if(this.type.inpType === 'text'){
-        if (this.email.hasError('required')) {
+        if (this.text.hasError('required')) {
+          return 'You must enter a value';
+        }
+      }
+      else if(this.type.inpType === 'number'){
+        if (this.number.hasError('required')) {
+          return 'You must enter a value';
+        }
+      }
+      else if(this.type.inpType === 'date'){
+        if (this.date.hasError('required')) {
           return 'You must enter a value';
         }
       }

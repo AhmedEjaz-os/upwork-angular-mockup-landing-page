@@ -133,12 +133,11 @@
       }
       &-3 {
         &__btn {
+          width: fit-content;
           &-1 {
-            width: fit-content;
             margin-left: 0px;
           }
           &-2 {
-            width: fit-content;
             margin-left: 0px;
           }
         }
@@ -235,22 +234,6 @@
           }
           &-2 {
             margin-left: 0px !important;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1200px) {
-  .homepage {
-    &-section {
-      &-3 {
-        &__btn {
-          &-1 {
-            margin-left: 3rem;
-          }
-          &-2 {
-            margin-left: 3rem;
           }
         }
       }

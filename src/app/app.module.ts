@@ -9,28 +9,35 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Material Import
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatFormFieldModule } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 import { NgIf, NgForOf } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { TextAreaComponent } from './components/text-area/text-area.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { MatNativeDateModule } from '@angular/material/core'; 
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSelectModule } from '@angular/material/select';
+
 
 
 // Component Imports
 import { AppComponent } from './app.component';
-import { AngularMaterialDialogComponent } from './components/angular-material-dialog/angular-material-dialog.component';
 import { HeaderComponent } from './components/header/header.component';
 import { Page1Component } from './components/page-1/page-1.component';
-import { SelectMenuComponent } from './components/select-menu/select-menu.component';
 import { Page2Component } from './components/page-2/page-2.component';
-import { Page1NewInputFieldsComponent } from './components/page-1-new-input-fields/page-1-new-input-fields.component';
-import { MaterialCheckboxComponent } from './components/material-checkbox/material-checkbox.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatMenuModule } from '@angular/material/menu';
 import { Page3Component } from './components/page-3/page-3.component';
+import { Page1NewInputFieldsComponent } from './components/page-1-new-input-fields/page-1-new-input-fields.component';
+import { SelectMenuComponent } from './components/select-menu/select-menu.component';
+import { AngularMaterialDialogComponent } from './components/angular-material-dialog/angular-material-dialog.component';
+import { MaterialCheckboxComponent } from './components/material-checkbox/material-checkbox.component';
+import { MaterialDatePickerComponent } from './components/material-date-picker/material-date-picker.component';
+import { MaterialDropdownSelectMenuComponent } from './components/material-dropdown-select-menu/material-dropdown-select-menu.component';
 
 
 const MaterialImportsArray = [
@@ -44,11 +51,13 @@ const MaterialImportsArray = [
   MatCheckboxModule,
   MatButtonModule,
   MatDialogModule,
-  MatMenuModule
+  MatMenuModule,
+  MatNativeDateModule,
+  MatDatepickerModule,
+  MatSelectModule
 ]
 @NgModule({
   declarations: [
-    AngularMaterialDialogComponent,
     AppComponent,
     HeaderComponent,
     Page1Component,
@@ -58,6 +67,9 @@ const MaterialImportsArray = [
     TextAreaComponent,
     MaterialCheckboxComponent,
     Page3Component,
+    AngularMaterialDialogComponent,
+    MaterialDatePickerComponent,
+    MaterialDropdownSelectMenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,6 +78,7 @@ const MaterialImportsArray = [
     ...MaterialImportsArray
   ],
   providers: [NgIf, NgForOf],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [AngularMaterialDialogComponent],
 })
 export class AppModule { }

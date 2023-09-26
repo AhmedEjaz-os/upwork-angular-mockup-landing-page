@@ -6,12 +6,12 @@
         <h5 class="homepage-section-2__title text-uppercase">Go to account using the Goldfire serial number OR
             License ID</h5>
         <div class="d-flex flex-column mt-5 align-items-start homepage-section-2__input-1">
-            <app-page-1-new-input-fields [type]="{inpType: 'text'}" [label]="{title: 'Serial number'}" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
+            <app-page-1-new-input-fields class="hideNumberScroll" [type]="{inpType: 'number'}" [label]="{title: 'Serial number'}" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
             <button class="btn btn-primary homepage-section-2__input-1__btn">View Account</button>
         </div>
         <div class="d-flex flex-column mt-5 align-items-start homepage-section-2__input-2">
             <div class="d-flex flex-column flex-sm-row">
-                <app-page-1-new-input-fields [type]="{inpType: 'text'}" [label]="{title: 'License ID'}" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
+                <app-page-1-new-input-fields class="hideNumberScroll" [type]="{inpType: 'number'}" [label]="{title: 'License ID'}" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
             </div>
             <div class="d-flex">
                 <button class="btn btn-primary homepage-section-2__input-2__btn-1 mr-3">View Account</button>
@@ -23,13 +23,13 @@
         <h5 class="homepage-section-2__title text-uppercase">Go to account using the company name AND Goldfire
             account</h5>
         <div class="d-flex flex-column mt-3">
-            <div class="d-flex flex-column flex-sm-row justify-content-between justify-content-md-start align-items-start align-items-sm-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between justify-content-md-start align-items-start align-items-md-center">
                 <app-select-menu class="homepage-select-menu" [menuHeading]="selectMenuHeadingOne"
                     [button]="selectMenuHeadingOneArray"></app-select-menu>
                 <app-select-menu [menuHeading]="selectMenuHeadingTwo" [button]="selectMenuHeadingTwoArray" class="homepage-select-menu-2 mt-3 mt-md-0">
                 </app-select-menu>
             </div>
-            <div class="d-flex align-items-center pt-4">
+            <div class="d-flex align-items-center pt-4 homepage-section-3__btn">
                 <button class="btn btn-primary homepage-section-3__btn-1 mr-3">View Account</button>
                 <a href="/new-account" class="btn btn-primary homepage-section-3__btn-2">New Account</a>
             </div>

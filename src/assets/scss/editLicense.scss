@@ -1,6 +1,195 @@
-.page-3{
-    &__section{
-        margin: 2em 30px 0px;
-        &__vertical-row{}
+.edit-license {
+  &__section {
+    &-1 {
     }
+    &-2 {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 3em;
+      &-vertical-row {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 3em;
+        &__field {
+          &-1 {
+            .mat-input-container {
+              width: 100px !important;
+            }
+            .mat-input-flex {
+              border: none !important;
+            }
+            .mat-input-element{
+              margin-top: 8px;
+            }
+          }
+          &-2 {
+            .mat-input-container {
+              width: 100px !important;
+            }
+            .mat-input-flex {
+              padding-right: 10px;
+            }
+          }
+          &-3 {
+            .mat-checkbox-layout {
+              flex-direction: column-reverse;
+              align-items: center;
+              grid-row-gap: 10px;
+            }
+            .mat-checkbox-inner-container {
+              margin: 0px;
+              margin-bottom: 20px;
+            }
+          }
+          &-4 {
+            margin-right: 20px;
+            .mat-input-flex {
+              padding-top: 0px !important;
+              padding-bottom: 0px !important;
+            }
+            .mat-input-container {
+              width: 150px !important;
+            }
+          }
+          &--5--6 {
+          }
+          &-5 {
+            margin-right: 20px;
+            .mat-input-flex {
+              padding-top: 0px !important;
+              padding-bottom: 0px !important;
+            }
+            .mat-input-container {
+              width: 150px !important;
+            }
+          }
+          &-6 {
+            margin-top: 1em;
+            .example-margin {
+              margin: 0px !important;
+            }
+          }
+          &--7--8 {
+          }
+          &-7 {
+            margin-right: 20px;
+            .mat-input-flex {
+              padding-top: 0px !important;
+              padding-bottom: 0px !important;
+            }
+            .mat-input-container {
+              width: 150px !important;
+            }
+          }
+          &-8 {
+            margin-top: 1em;
+            .example-margin {
+              margin: 0px !important;
+            }
+          }
+          &--9--10 {
+          }
+          &-9 {
+            margin-right: 20px;
+            .mat-input-flex {
+              padding-top: 0px !important;
+              padding-bottom: 0px !important;
+            }
+            .mat-input-container {
+              width: 150px !important;
+            }
+          }
+          &-10 {
+            margin-top: 1em;
+            .example-margin {
+              margin: 0px !important;
+            }
+          }
+          &-11 {
+            margin-right: 20px;
+            .mat-input-flex {
+              padding-right: 10px;
+            }
+            .mat-input-container {
+              width: 150px !important;
+            }
+          }
+          &-12 {
+            .mat-input-flex {
+              padding-right: 10px;
+            }
+            .mat-input-container {
+              width: 150px !important;
+            }
+          }
+        }
+        &-2 {
+          &__field {
+            &-1 {
+              .mat-input-container {
+                width: fit-content !important;
+              }
+              .example-container .mat-input-flex {
+                width: 150px;
+              }
+            }
+            &-2 {
+              .mat-input-container {
+                width: fit-content !important;
+              }
+              .mat-input-flex {
+                width: 150px;
+              }
+              .mat-form-field-label-wrapper {
+                display: none;
+              }
+            }
+            &-3 {
+              .mat-input-container {
+                width: fit-content !important;
+              }
+              .mat-input-flex {
+                width: 150px;
+              }
+              .mat-form-field-label-wrapper {
+                display: none;
+              }
+            }
+          }
+        }
+        &-3 {
+          &__field-1 {
+            .mat-input-flex {
+              width: 150px;
+              padding-right: 10px;
+            }
+          }
+        }
+        &-4 {
+          &-btn {
+            &-1 {
+              width: 180px;
+            }
+            &-2 {
+              @extend .new-account__section-2--button-row__btn-1;
+              border: none !important;
+              width: 80px;
+              &:hover {
+                background-color: #999 !important;
+                border: none !important;
+              }
+              &:focus {
+                background-color: #999 !important;
+                border-color: #0062cc !important;
+                box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5) !important;
+              }
+            }
+            &-3 {
+                width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

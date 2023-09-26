@@ -26,17 +26,28 @@ export class Page1NewInputFieldsComponent implements OnInit {
   @Input() placeHolder: any;
   @Input() errorMessageForRequiredField: any;
   @Input() hint: any;
+  @Input() type: any;
   email = new FormControl('', [Validators.required, Validators.email]);
+  text = new FormControl('', [Validators.required, Validators.nullValidator]);
 
   constructor() { }
 
   ngOnInit() {}
 
   getErrorMessage() {
-    if (this.email.hasError('required')) {
-      return 'You must enter a value';
+    if(this.type){
+      if(this.type.inpType === 'email'){
+        if (this.email.hasError('required')) {
+          return 'You must enter a value';
+        }
+        return this.email.hasError('email') ? "Email must be in email format abc@xyz.com": '';
+      }
+      else if(this.type.inpType === 'text'){
+        if (this.email.hasError('required')) {
+          return 'You must enter a value';
+        }
+      }
     }
-    return this.email.hasError('email') ? this.errorMessageForRequiredField.error : '';
   }
 
 }

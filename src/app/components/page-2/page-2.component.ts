@@ -27,6 +27,9 @@ export class Page2Component implements OnInit {
         placeholder: {
           text: ''
         },
+        type: {
+          inpType: 'text'
+        },
       },
       {
         label: {
@@ -35,7 +38,10 @@ export class Page2Component implements OnInit {
         required: true,
         placeholder: {
           text: ''
-        }
+        },
+        type: {
+          inpType: 'text'
+        },
       },
       {
         label: {
@@ -44,7 +50,10 @@ export class Page2Component implements OnInit {
         required: true,
         placeholder: {
           text: ''
-        }
+        },
+        type: {
+          inpType: 'text'
+        },
       },
       {
         label: {
@@ -53,7 +62,10 @@ export class Page2Component implements OnInit {
         required: true,
         placeholder: {
           text: ''
-        }
+        },
+        type: {
+          inpType: 'email'
+        },
       },
       {
         label: {
@@ -62,7 +74,10 @@ export class Page2Component implements OnInit {
         required: true,
         placeholder: {
           text: ''
-        }
+        },
+        type: {
+          inpType: 'text'
+        },
       }
     ]
     this.verticalLabels = [
@@ -73,7 +88,10 @@ export class Page2Component implements OnInit {
         required: true,
         placeholder: {
           text: ''
-        }
+        },
+        type: {
+          inpType: 'text'
+        },
       },
       {
         label: {
@@ -82,7 +100,10 @@ export class Page2Component implements OnInit {
         required: true,
         placeholder: {
           text: ''
-        }
+        },
+        type: {
+          inpType: 'text'
+        },
       },
       {
         label: {
@@ -91,7 +112,10 @@ export class Page2Component implements OnInit {
         required: false,
         placeholder: {
           text: ''
-        }
+        },
+        type: {
+          inpType: 'text'
+        },
       },
       {
         label: {
@@ -100,7 +124,10 @@ export class Page2Component implements OnInit {
         required: false,
         placeholder: {
           text: ''
-        }
+        },
+        type: {
+          inpType: 'text'
+        },
       }
     ]
   }

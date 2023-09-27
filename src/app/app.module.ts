@@ -38,6 +38,7 @@ import { AngularMaterialDialogComponent } from './components/angular-material-di
 import { MaterialCheckboxComponent } from './components/material-checkbox/material-checkbox.component';
 import { MaterialDatePickerComponent } from './components/material-date-picker/material-date-picker.component';
 import { MaterialDropdownSelectMenuComponent } from './components/material-dropdown-select-menu/material-dropdown-select-menu.component';
+import { Page4Component } from './components/page-4/page-4.component';
 
 
 const MaterialImportsArray = [
@@ -70,6 +71,7 @@ const MaterialImportsArray = [
     AngularMaterialDialogComponent,
     MaterialDatePickerComponent,
     MaterialDropdownSelectMenuComponent,
+    Page4Component,
   ],
   imports: [
     BrowserModule,

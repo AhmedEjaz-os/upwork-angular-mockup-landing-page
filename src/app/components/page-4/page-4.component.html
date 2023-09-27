@@ -1,0 +1,70 @@
+<div class="view-account ml-1 ml-sm-3 mr-sm-3 mr-1">
+  <div class="view-account__section-1">
+    <p><a href="/" class="view-account__section-1__breadcrumbs">Home</a> > <span>View Account</span></p>
+  </div>
+  <div class="view-account__section-2 mt-5">
+    <div class="view-account__section-2__row-1-btn d-flex flex-wrap">
+      <button class="view-account__section-2__row-1-btn-1 btn btn-primary mr-3 mt-3 mt-xl-0">Edit Account</button>
+      <a href="view-account/modify-server-registration" class="view-account__section-2__row-1-btn-2 btn btn-primary mr-3 mt-3 mt-xl-0 text-white text-decoration-none">Modify Server Registeration</a>
+      <button class="view-account__section-2__row-1-btn-3 btn btn-primary mr-3 mt-3 mt-xl-0">Unblock Seats</button>
+      <button class="view-account__section-2__row-1-btn-4 btn btn-primary mr-3 mt-3 mt-xl-0">Review History</button>
+      <button class="view-account__section-2__row-1-btn-5 btn btn-primary mt-3 mt-xl-0">Delete Account</button>
+    </div>
+    <div class="view-account__section-2__row-2 mt-5">
+      <app-page-1-new-input-fields class="view-account__section-2__row-2__field-1" [val]="{value: 'IHS-DEMO-GFIN-001'}"
+        [type]="{inpType: 'text'}" [label]="{title: 'Account Name'}" [required]="false" [placeHolder]="{text: ''}"
+        [errorMessageForRequiredField]="{error: ''}" disable="true"></app-page-1-new-input-fields>
+      <app-page-1-new-input-fields class="view-account__section-2__row-2__field-2" [val]="{value: 'IHS-DEMO-GFIN-001'}"
+        [type]="{inpType: 'text'}" [label]="{title: 'Account Number'}" [required]="false" [placeHolder]="{text: ''}"
+        [errorMessageForRequiredField]="{error: ''}" disable="true"></app-page-1-new-input-fields>
+      <app-material-dropdown-select-menu class="view-account__section-2__row-2__field-3"
+        [label]="{title: 'Contact Name'}" [menuItem]="dropdownMenu1"></app-material-dropdown-select-menu>
+      <app-page-1-new-input-fields class="view-account__section-2__row-2__field-4"
+        [val]="{value: 'brian.harris@ihsmarkit.com'}" [type]="{inpType: 'email'}" [label]="{title: 'Email'}"
+        [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" disable="true">
+      </app-page-1-new-input-fields>
+      <div class="view-account__section-2__row-2__btn-row">
+        <button class="view-account__section-2__row-2__btn-row-1 btn btn-primary mr-3 mt-3 mt-xl-0">Delete Contact</button>
+        <button class="view-account__section-2__row-2__btn-row-2 btn btn-primary mr-3 mt-3 mt-xl-0">Add Contact</button>
+        <button class="view-account__section-2__row-2__btn-row-3 btn btn-primary mt-3 mt-xl-0">Edit Contact</button>
+      </div>
+      <app-text-area [label]="{title: 'Comments'}" class="view-account__section-2__row-2__text-area d-block mt-5"></app-text-area>
+      <div class="view-account__section-2__row-2__searial-number-row d-flex flex-wrap">
+        <app-page-1-new-input-fields class="view-account__section-2__row-2__searial-number-row__field-1"
+          [val]="{value: '0975E-5E35C-J3A41-5J7AK-30876'}" [type]="{inpType: 'text'}" [label]="{title: 'Serial Number'}"
+          [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" disable="true">
+        </app-page-1-new-input-fields>
+        <app-material-checkbox class="view-account__section-2__row-2__searial-number-row__field-2"
+        [label]="{title: 'Maintenance'}"></app-material-checkbox>
+        <app-page-1-new-input-fields class="view-account__section-2__row-2__searial-number-row__field-3 mr-3"
+        *ngFor="let verticalLabel of verticalLabels;" [type]="verticalLabel.type" [label]="verticalLabel.label"
+        [val]="verticalLabel?.val" [required]="verticalLabel.required" [placeHolder]="verticalLabel.placeholder"
+        [errorMessageForRequiredField]="{error: ''}">
+      </app-page-1-new-input-fields>
+    </div>
+    <app-page-1-new-input-fields class="view-account__section-2__row-2__field-5"
+      [val]="{value: '12.7'}" [type]="{inpType: 'text'}" [label]="{title: 'Serial Version'}"
+      [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" disable="true">
+    </app-page-1-new-input-fields>
+    <a href="edit-license" class="view-account__section-2__row-2__field-6 btn btn-primary text-white text-decoration-none">New License</a>
+    <div class="view-account__section-2__row-2__table mt-5">
+      <table>
+        <tr *ngFor="let tableHeader of tableHeaders; index as i">
+          <th>{{tableHeader?.title ? tableHeader?.title : ''}}</th>
+          <td *ngFor="let entry of tableHeader.entries;">
+            <div *ngIf="i === 0">
+              <a href="edit-license">{{entry?.entry ? entry?.entry : ''}}</a>
+            </div>
+            <div *ngIf="i != 0">
+              {{entry?.entry ? entry?.entry : ''}}
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="view-account__section-2__row-2__last-row d-flex justify-content-end mt-3">
+      <button class="view-account__section-2__row-2__last-row__btn-1 btn btn-primary">Finish</button>
+    </div>
+    </div>
+  </div>
+</div>

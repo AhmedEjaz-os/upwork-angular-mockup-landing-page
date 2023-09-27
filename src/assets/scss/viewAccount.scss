@@ -1,0 +1,270 @@
+.view-account{
+    &__section{
+        &-1{}
+        &-2{
+            margin-left: 12em;
+            &__row-1-btn{
+                &-1{
+                    width: 136px;
+                }
+                &-2{}
+                &-3{
+                    width: 136px;
+                }
+                &-4{
+                    width: 136px;
+                }
+                &-5{
+                    width: 136px;
+                }
+            }
+            &__row-2{
+                &__field{
+                    &-1{}
+                    &-2{}
+                    &-3{
+                        .mat-input-flex{
+                            padding-right: 10px;
+                        }
+                    }
+                    &-4{}
+                    &-5{}
+                    &-6{
+                        width: 136px;
+                    }
+                }
+                &__btn-row{
+                    &-1{
+                        width: 136px;
+                    }
+                    &-2{
+                        width: 136px;
+                    }
+                    &-3{
+                        width: 136px;
+                    }
+                }
+                &__text-area{}
+                &__searial-number-row{
+                    &__field-1{}
+                    &__field-2{
+                        .mat-checkbox-layout{
+                            grid-row-gap: 10px;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            margin: 0px;
+                            .mat-checkbox-inner-container{
+                                margin: 0px !important;
+                            }
+                        }
+                    }
+                    &__field-3{
+                        @extend .new-account__section-2__input-fields-vertical;
+                    }
+                }
+                &__table{
+                    overflow-y: scroll;
+                    table{
+                        width: 100%;
+                    }
+                    tbody{
+                        display: flex;
+                        justify-content: space-between;
+                        border-top: 2px solid black;
+                        border-bottom: 2px solid black;
+                    }
+                    tr{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        border-left: 2px solid black;
+                    }
+                    tr:nth-last-child(1){
+                        border-right: 2px solid black;
+                    }
+                    th{
+                        background-color: #ccc;
+                    }
+                    td{
+                        height: 100%;
+                    }
+                    td:nth-child(even){
+                        background-color: #eee;
+                    }
+                }
+                &__last-row{
+                    &__btn-1{
+                        width: 136px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .view-account{
+        &__section{
+            &-1{}
+            &-2{
+                margin-left: 0em;
+                &__row-1-btn{
+                    &-1{}
+                    &-2{}
+                    &-3{}
+                    &-4{}
+                    &-5{}
+                }
+                &__row-2{
+                    &__field{
+                        &-1{}
+                        &-2{}
+                        &-3{}
+                        &-4{}
+                        &-5{}
+                        &-6{}
+                    }
+                    &__btn-row{
+                        &-1{}
+                        &-2{}
+                        &-3{}
+                    }
+                    &__text-area{}
+                    &__searial-number-row{
+                        &__field-1{}
+                        &__field-2{
+                            .mat-checkbox-layout{
+                                .mat-checkbox-inner-container{
+                                }
+                            }
+                        }
+                        &__field-3{}
+                    }
+                    &__table{
+                        table{}
+                        tbody{}
+                        tr{}
+                        tr:nth-last-child(1){}
+                        th{}
+                        td{}
+                        td:nth-child(even){}
+                    }
+                    &__last-row{
+                        &__btn-1{}
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px){
+    .view-account{
+        &__section{
+            &-1{}
+            &-2{
+                margin-left: 12em;
+                &__row-1-btn{
+                    &-1{}
+                    &-2{}
+                    &-3{}
+                    &-4{}
+                    &-5{}
+                }
+                &__row-2{
+                    &__field{
+                        &-1{}
+                        &-2{}
+                        &-3{}
+                        &-4{}
+                        &-5{}
+                        &-6{}
+                    }
+                    &__btn-row{
+                        &-1{}
+                        &-2{}
+                        &-3{}
+                    }
+                    &__text-area{}
+                    &__searial-number-row{
+                        &__field-1{}
+                        &__field-2{
+                            .mat-checkbox-layout{
+                                .mat-checkbox-inner-container{
+                                }
+                            }
+                        }
+                        &__field-3{}
+                    }
+                    &__table{
+                        table{}
+                        tbody{}
+                        tr{}
+                        tr:nth-last-child(1){}
+                        th{}
+                        td{}
+                        td:nth-child(even){}
+                    }
+                    &__last-row{
+                        &__btn-1{}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .view-account{
+        &__section{
+            &-1{}
+            &-2{
+                margin-left: 0em;
+                &__row-1-btn{
+                    &-1{}
+                    &-2{}
+                    &-3{}
+                    &-4{}
+                    &-5{}
+                }
+                &__row-2{
+                    &__field{
+                        &-1{}
+                        &-2{}
+                        &-3{}
+                        &-4{}
+                        &-5{}
+                        &-6{}
+                    }
+                    &__btn-row{
+                        &-1{}
+                        &-2{}
+                        &-3{}
+                    }
+                    &__text-area{}
+                    &__searial-number-row{
+                        &__field-1{}
+                        &__field-2{
+                            .mat-checkbox-layout{
+                                .mat-checkbox-inner-container{
+                                }
+                            }
+                        }
+                        &__field-3{}
+                    }
+                    &__table{
+                        table{}
+                        tbody{}
+                        tr{}
+                        tr:nth-last-child(1){}
+                        th{}
+                        td{}
+                        td:nth-child(even){}
+                    }
+                    &__last-row{
+                        &__btn-1{}
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.modify-server-registration{
+    &__section{
+        &-1{}
+        &-2{
+            @extend .view-account__section-2;
+            &--grid-fields{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                align-items: flex-end;
+            }
+            &--title{
+                margin-left: -3em;
+            }
+            &--field-1{}
+            &--field-2{}
+            &--field-3{}
+            &--field-4{}
+            &--field-5{}
+            &--field-6{}
+            &--field-7{
+                .mat-input-flex{
+                    padding-right: 10px;
+                }
+            }
+            &--field-8{
+                .mat-input-flex{
+                    padding-right: 10px;
+                }
+            }
+            &--field-9{
+                .mat-input-flex{
+                    padding-right: 10px;
+                }
+            }
+            &--btn-row{
+                &-1{
+                    @extend .new-account__section-2--button-row__btn-1;
+                    width: 80px;
+                }
+                &-2{}
+                &-3{
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm){
+    .modify-server-registration{
+        &__section{
+            &-1{}
+            &-2{
+                &--grid-fields{
+                    grid-template-columns: 100%;
+                }
+                &--title{}
+                &--field-1{}
+                &--field-2{}
+                &--field-3{}
+                &--field-4{}
+                &--field-5{}
+                &--field-6{}
+                &--field-7{
+                    .mat-input-flex{}
+                }
+                &--field-8{
+                    .mat-input-flex{}
+                }
+                &--field-9{
+                    .mat-input-flex{}
+                }
+                &--btn-row{
+                    &-1{}
+                    &-2{}
+                    &-3{}
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(lg){
+    .modify-server-registration{
+        &__section{
+            &-1{}
+            &-2{
+                &--grid-fields{}
+                &--title{
+                    margin-left: 0px !important;
+                }
+                &--field-1{}
+                &--field-2{}
+                &--field-3{}
+                &--field-4{}
+                &--field-5{}
+                &--field-6{}
+                &--field-7{
+                    .mat-input-flex{}
+                }
+                &--field-8{
+                    .mat-input-flex{}
+                }
+                &--field-9{
+                    .mat-input-flex{}
+                }
+                &--btn-row{
+                    &-1{}
+                    &-2{}
+                    &-3{}
+                }
+            }
+        }
+    }
+}

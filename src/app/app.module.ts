@@ -39,6 +39,7 @@ import { MaterialCheckboxComponent } from './components/material-checkbox/materi
 import { MaterialDatePickerComponent } from './components/material-date-picker/material-date-picker.component';
 import { MaterialDropdownSelectMenuComponent } from './components/material-dropdown-select-menu/material-dropdown-select-menu.component';
 import { Page4Component } from './components/page-4/page-4.component';
+import { Page5Component } from './components/page-5/page-5.component';
 
 
 const MaterialImportsArray = [
@@ -72,6 +73,7 @@ const MaterialImportsArray = [
     MaterialDatePickerComponent,
     MaterialDropdownSelectMenuComponent,
     Page4Component,
+    Page5Component,
   ],
   imports: [
     BrowserModule,

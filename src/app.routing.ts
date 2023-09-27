@@ -8,6 +8,7 @@ import { Page1Component } from "./app/components/page-1/page-1.component";
 import { Page2Component } from "./app/components/page-2/page-2.component";
 import { Page3Component } from "./app/components/page-3/page-3.component";
 import { Page4Component } from "./app/components/page-4/page-4.component";
+import { Page5Component } from "./app/components/page-5/page-5.component";
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: "view-account",
     component: Page4Component,
+  },
+  {
+    path: "view-account/modify-server-registration",
+    component: Page5Component,
   },
 ];
 @NgModule({

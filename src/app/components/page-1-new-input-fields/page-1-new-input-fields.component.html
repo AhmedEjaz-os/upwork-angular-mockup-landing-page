@@ -2,12 +2,12 @@
   <mat-form-field>
     <mat-label>{{label?.title}}</mat-label>
     <!-- Required Fields -->
-    <input matInput *ngIf="!disable && required && (type?.inpType === 'text' || type?.inpType === 'email')"  placeholder={{placeHolder?.text}} [formControl]="type?.inpType === 'text' ? text : email" value={{val?.value}} required>
-    <input matInput *ngIf="!disable && required && type?.inpType === 'number'"  type="number" placeholder={{placeHolder?.text}} value={{val?.value}} [formControl]="number" required>
+    <input matInput *ngIf="!disable && (required && (type?.inpType === 'text' || type?.inpType === 'email'))"  placeholder={{placeHolder?.text}} [formControl]="type?.inpType === 'text' ? text : email" value={{val?.value}} required>
+    <input matInput *ngIf="!disable && (required && type?.inpType === 'number')"  type="number" placeholder={{placeHolder?.text}} value={{val?.value}} [formControl]="number" required>
     
     <!-- Not Required Fields -->
-    <input matInput *ngIf="!disable && !required && (type?.inpType === 'text' || type?.inpType === 'email')"  placeholder={{placeHolder?.text}} value={{val?.value}}>
-    <input matInput *ngIf="!disable && !required && type?.inpType === 'number'" type="number"  placeholder={{placeHolder?.text}} value={{val?.value}}>
+    <input matInput *ngIf="!disable && (!required && (type?.inpType === 'text' || type?.inpType === 'email'))"  placeholder={{placeHolder?.text}} value={{val?.value}}>
+    <input matInput *ngIf="!disable && (!required && type?.inpType === 'number')" type="number"  placeholder={{placeHolder?.text}} value={{val?.value}}>
     
     <!-- Disabled Fields -->
     <input matInput *ngIf="disable && (type?.inpType === 'text' || type?.inpType === 'email')"  placeholder={{placeHolder?.text}} value={{val?.value}} disabled>

@@ -248,14 +248,19 @@ body{
 
 .warning-badge{
   background-color: #fce8ab;
-  border: 5px solid #ffc106;
-  position: absolute;
+  border-top: 5px solid #ffc106;
+  border-bottom: 5px solid #ffc106;
   padding-top: 0.4rem !important;
   padding-bottom: 0.4rem !important;
-  width: 100%;
+  width: 100vw;
   top: 56px;
+  border-radius: 0px;
   // width: 320px;
   // height: 118px;
+  &__parent{
+    position: absolute;
+    top: 56px;
+  }
   &__icon{}
   &__text{
     white-space: break-spaces;

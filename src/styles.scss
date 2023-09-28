@@ -204,6 +204,9 @@
   }
 }
 .cdk-overlay-container:has(.mat-datepicker-content) {
+  .mat-datepicker-content{
+    transform: translateX(36vw) translateY(38vh);
+  }
 }
 
 .hideNumberScroll {
@@ -239,6 +242,27 @@
   }
 }
 
+body{
+  position: relative;
+}
+
+.warning-badge{
+  background-color: #fce8ab;
+  border: 5px solid #ffc106;
+  position: absolute;
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+  width: 100%;
+  top: 56px;
+  // width: 320px;
+  // height: 118px;
+  &__icon{}
+  &__text{
+    white-space: break-spaces;
+    &-x{}
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .cdk-overlay-container:has(.mat-dialog-title) {
     .cdk-overlay-pane {
@@ -265,6 +289,12 @@
         word-wrap: break-word;
         text-wrap: wrap;
       }
+    }
+  }
+  .warning-badge{
+    &__icon{}
+    &__text{
+      &-x{}
     }
   }
 }

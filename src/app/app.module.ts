@@ -40,6 +40,7 @@ import { MaterialDatePickerComponent } from './components/material-date-picker/m
 import { MaterialDropdownSelectMenuComponent } from './components/material-dropdown-select-menu/material-dropdown-select-menu.component';
 import { Page4Component } from './components/page-4/page-4.component';
 import { Page5Component } from './components/page-5/page-5.component';
+import { WarningBadgeComponent } from './components/warning-badge/warning-badge.component';
 
 
 const MaterialImportsArray = [
@@ -74,6 +75,7 @@ const MaterialImportsArray = [
     MaterialDropdownSelectMenuComponent,
     Page4Component,
     Page5Component,
+    WarningBadgeComponent,
   ],
   imports: [
     BrowserModule,

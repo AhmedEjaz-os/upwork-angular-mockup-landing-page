@@ -1,4 +1,4 @@
-<div class="overflow-hidden w-100 warning-badge__parent">
+<div class="overflow-hidden w-100 warning-badge__parent" id="warning-badge-bar">
   <app-warning-badge></app-warning-badge>
 </div>
 <div class="modify-server-registration ml-1 ml-sm-3 mr-sm-3 mr-1">
@@ -44,14 +44,14 @@
         [type]="{inpType: 'number'}" [label]="{title: 'Current number of automatic registration change:'}"
         [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}">
       </app-page-1-new-input-fields>
-    </div>
-    <div class="modify-server-registration__section-2--btn-row mt-3 float-right mb-5">
-      <a href="view-account"
-        class="modify-server-registration__section-2--btn-row-1 btn mr-3 text-dark text-decoration-none mt-3 mt-sm-0">Cancel</a>
-      <button class="modify-server-registration__section-2--btn-row-2 btn btn-primary mr-3 mt-3 mt-sm-0">Unregister
-        Server</button>
-      <a href="view-account"
-        class="modify-server-registration__section-2--btn-row-3 btn btn-primary text-white text-decoration-none mt-3 mt-sm-0">Update</a>
+      <div class="modify-server-registration__section-2--btn-row mt-3 float-right mb-5">
+        <a href="view-account"
+          class="modify-server-registration__section-2--btn-row-1 btn mr-3 text-dark text-decoration-none mt-3 mt-sm-0">Cancel</a>
+        <button class="modify-server-registration__section-2--btn-row-2 btn btn-primary mr-3 mt-3 mt-sm-0">Unregister
+          Server</button>
+        <a href="view-account"
+          class="modify-server-registration__section-2--btn-row-3 btn btn-primary text-white text-decoration-none mt-3 mt-sm-0">Update</a>
+      </div>
     </div>
   </div>
 </div>

@@ -69,9 +69,14 @@
                 &__btn{
                     &-1{
                         background-color: #999;
+                        width: 74px;
                     }
-                    &-2{}
-                    &-3{}
+                    &-2{
+                        width: 111px;
+                    }
+                    &-3{
+                        width: 111px;
+                    }
                 }
             }
         }

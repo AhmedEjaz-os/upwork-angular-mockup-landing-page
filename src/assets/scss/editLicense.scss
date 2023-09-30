@@ -3,7 +3,7 @@
     &-1 {
     }
     &-2 {
-      width: 90%;
+      width: fit-content;
       margin: 0 auto;
       margin-top: 3em;
       &-vertical-row {
@@ -124,6 +124,8 @@
           }
         }
         &-2 {
+          margin-top: 2.6rem;
+          margin-left: 6.3em;
           &__field {
             &-1 {
               .mat-input-container {
@@ -158,6 +160,8 @@
           }
         }
         &-3 {
+          margin-top: 2.6rem;
+          margin-left: 6.3em;
           &__field-1 {
             .mat-input-flex {
               width: 150px;
@@ -166,6 +170,7 @@
           }
         }
         &-4 {
+          margin-left: 6.3em;
           &-btn {
             &-1 {
               width: 180px;
@@ -173,7 +178,7 @@
             &-2 {
               @extend .new-account__section-2--button-row__btn-1;
               border: none !important;
-              width: 80px;
+              width: 74px;
               &:hover {
                 background-color: #999 !important;
                 border: none !important;
@@ -185,7 +190,7 @@
               }
             }
             &-3 {
-                width: 80px;
+              width: 74px;
             }
           }
         }

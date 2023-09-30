@@ -1,4 +1,4 @@
-<div class="overflow-hidden w-100 warning-badge__parent">
+<div class="overflow-hidden w-100 warning-badge__parent" id="warning-badge-bar">
   <app-warning-badge></app-warning-badge>
 </div>
 <div class="view-account ml-1 ml-sm-3 mr-sm-3 mr-1">
@@ -53,7 +53,8 @@
     <div class="view-account__section-2__row-2__table mt-5">
       <table>
         <tr *ngFor="let tableHeader of tableHeaders; index as i">
-          <th>{{tableHeader?.title ? tableHeader?.title : ''}}</th>
+          <th rowspan="2">{{tableHeader?.title ? tableHeader?.title : ''}}</th>
+          <th style="width: 100%; height: 100%;"></th>
           <td *ngFor="let entry of tableHeader.entries;">
             <div *ngIf="i === 0">
               <a href="edit-license">{{entry?.entry ? entry?.entry : ''}}</a>

@@ -1,4 +1,4 @@
-<div class="overflow-hidden w-100 warning-badge__parent">
+<div class="overflow-hidden w-100 warning-badge__parent" id="warning-badge-bar">
   <app-warning-badge></app-warning-badge>
 </div>
 <div class="edit-license ml-1 ml-sm-3 mr-sm-3 mr-1">
@@ -7,7 +7,6 @@
   </div>
   <div class="edit-license__section-2">
     <h4>Edit License</h4>
-    <hr style="margin-top: 0.6em; border-width: 2px; border-color: #000;" />
     <div class="edit-license__section-2-vertical-row flex-wrap">
       <app-page-1-new-input-fields class="hideNumberScroll edit-license__section-2-vertical-row__field-1" [val]="{value: 9999}" [type]="{inpType: 'number'}" [label]="{title: 'License'}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" disable="true" ></app-page-1-new-input-fields>
       <app-page-1-new-input-fields class="edit-license__section-2-vertical-row__field-2" [type]="{inpType: 'number'}" [label]="{title: 'Seats'}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
@@ -30,7 +29,7 @@
       <app-material-dropdown-select-menu [label]="{title: ''}" 
       [menuItem]="dropdownMenu2" class="edit-license__section-2-vertical-row__field-12" ></app-material-dropdown-select-menu>
     </div>
-    <div class="edit-license__section-2-vertical-row-2 d-flex align-items-start align-items-md-center mt-3 flex-wrap flex-column flex-md-row">
+    <div class="edit-license__section-2-vertical-row-2 d-flex align-items-start align-items-md-center flex-wrap flex-column flex-md-row">
       <app-page-1-new-input-fields class="hideNumberScroll edit-license__section-2-vertical-row-2__field-1 mr-3" [val]="{value: ''}" [type]="{inpType: 'number'}" [label]="{title: 'Opportunity (License ID)'}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
       <app-page-1-new-input-fields class="hideNumberScroll edit-license__section-2-vertical-row-2__field-2 mr-3" [val]="{value: ''}" [type]="{inpType: 'number'}" [label]="{title: ''}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
       <app-page-1-new-input-fields class="hideNumberScroll edit-license__section-2-vertical-row-2__field-3" [val]="{value: ''}" [type]="{inpType: 'number'}" [label]="{title: ''}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>

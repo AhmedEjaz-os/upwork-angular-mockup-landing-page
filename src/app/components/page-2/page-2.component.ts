@@ -18,6 +18,9 @@ export class Page2Component implements OnInit {
   ) { }
 
   ngOnInit() {
+    setTimeout(() => {
+      document.getElementById('warning-badge-bar').style.top = '-64px'
+    }, 10000);
     this.labels = [
       {
         label: {

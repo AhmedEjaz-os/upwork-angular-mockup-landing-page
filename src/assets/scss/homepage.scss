@@ -29,7 +29,7 @@
         &-1 {
           grid-row-gap: 14px;
           &__btn {
-            width: 130px;
+            width: 140px;
           }
         }
         &-2 {
@@ -44,10 +44,10 @@
           }
           &__btn {
             &-1 {
-              width: 130px;
+              width: 140px;
             }
             &-2 {
-              width: 130px;
+              width: 140px;
             }
           }
         }
@@ -58,10 +58,10 @@
       width: fit-content;
       &__btn {
         &-1 {
-          width: 130px;
+          width: 140px;
         }
         &-2 {
-          width: 130px;
+          width: 140px;
         }
       }
     }
@@ -71,7 +71,7 @@
         @extend .mb-5;
       }
       &__btn{
-        width: 130px;
+        width: 140px;
       }
     }
   }

@@ -11,9 +11,12 @@ export class Page1Component implements OnInit {
   selectMenuHeadingTwo: string;
   selectMenuHeadingTwoArray: any;
   constructor(
-  ) { }
+  ) {}
   
   ngOnInit() {
+    setTimeout(() => {
+      document.getElementById('warning-badge-bar').style.top = '-64px'
+    }, 10000);
     this.selectMenuHeadingOne = "Company";
     this.selectMenuHeadingOneArray = [
       {

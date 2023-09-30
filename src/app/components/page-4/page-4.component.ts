@@ -12,6 +12,9 @@ export class Page4Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      document.getElementById('warning-badge-bar').style.top = '-64px'
+    }, 10000);
     this.dropdownMenu1=[
       {
         menuItemTitle: "Brian Harris"

@@ -10,7 +10,7 @@
 </div>
 <div mat-dialog-content *ngIf="data?.html === 'ManageKnowledgeBases'" class="ManageKnowledgeBasesDialog">
   <app-material-checkbox class="ManageKnowledgeBasesDialog--checkbox" *ngFor="let ManageKnowledgeBase1 of ManageKnowledgeBases1;" [label]="ManageKnowledgeBase1"></app-material-checkbox>
-  <hr style="border-style: dashed; border-width: 2px;" />
+  <hr style="border-top: none !important; border-left: none !important; border-right: none !important; border-bottom-width: 2px; border-style: solid; width: 60%; margin-left: 12px;" />
   <app-material-checkbox class="ManageKnowledgeBasesDialog--checkbox" *ngFor="let ManageKnowledgeBase2 of ManageKnowledgeBases2;" [label]="ManageKnowledgeBase2"></app-material-checkbox>
 </div>
 <div mat-dialog-actions *ngIf="data?.html === 'ManageKnowledgeBases'" class="d-flex align-items-center justify-content-end ManageKnowledgeBases__btn pr-1">

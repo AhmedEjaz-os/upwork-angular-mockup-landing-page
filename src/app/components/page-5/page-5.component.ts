@@ -10,6 +10,9 @@ export class Page5Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      document.getElementById('warning-badge-bar').style.top = '-64px'
+    }, 10000);
   }
 
 }

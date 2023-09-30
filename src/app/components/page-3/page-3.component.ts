@@ -16,6 +16,9 @@ export class Page3Component implements OnInit {
   ) { }
 
   ngOnInit() {
+    setTimeout(() => {
+      document.getElementById('warning-badge-bar').style.top = '-64px'
+    }, 10000);
     this.dropdownMenu1 = [
       {
         menuItemTitle: 'Research'

@@ -8,9 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MaterialDatePickerComponent implements OnInit {
   @Input() label: any;
   @Input() required: boolean;
+  datePickerDocument: any;
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

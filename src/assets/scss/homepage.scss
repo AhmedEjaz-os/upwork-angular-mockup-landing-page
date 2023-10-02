@@ -163,6 +163,9 @@
       }
     }
   }
+  .section-1-btn-row{
+    width: 300px;
+  }
 }
 @include media-breakpoint-down(md) {
   .homepage {

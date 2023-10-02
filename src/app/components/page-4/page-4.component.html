@@ -5,8 +5,8 @@
   <div class="view-account__section-1">
     <p><a href="/" class="view-account__section-1__breadcrumbs">Home</a> > <span>View Account</span></p>
   </div>
-  <div class="view-account__section-2 mt-5">
-    <div class="view-account__section-2__row-1-btn d-flex flex-wrap">
+  <div class="view-account__section-2 mt-5 ">
+    <div class="view-account__section-2__row-1-btn flex-md-wrap">
       <button class="view-account__section-2__row-1-btn-1 btn btn-primary mr-3 mt-3 mt-xl-0">Edit Account</button>
       <a href="view-account/modify-server-registration" class="view-account__section-2__row-1-btn-2 btn btn-primary mr-3 mt-3 mt-xl-0 text-white text-decoration-none">Modify Server Registeration</a>
       <button class="view-account__section-2__row-1-btn-3 btn btn-primary mr-3 mt-3 mt-xl-0">Unblock Seats</button>
@@ -32,7 +32,7 @@
         <button class="view-account__section-2__row-2__btn-row-3 btn btn-primary mt-3 mt-xl-0">Edit Contact</button>
       </div>
       <app-text-area [label]="{title: 'Comments'}" class="view-account__section-2__row-2__text-area d-block mt-5"></app-text-area>
-      <div class="view-account__section-2__row-2__searial-number-row d-flex flex-wrap">
+      <div class="view-account__section-2__row-2__searial-number-row">
         <app-page-1-new-input-fields class="view-account__section-2__row-2__searial-number-row__field-1"
           [val]="{value: '0975E-5E35C-J3A41-5J7AK-30876'}" [type]="{inpType: 'text'}" [label]="{title: 'Serial Number'}"
           [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" disable="true">

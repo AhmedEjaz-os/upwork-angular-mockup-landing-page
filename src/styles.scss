@@ -205,11 +205,6 @@
     margin-top: 50px;
   }
 }
-.cdk-overlay-container:has(.mat-datepicker-content) {
-  .mat-datepicker-content{
-    transform: translateX(36vw) translateY(38vh);
-  }
-}
 
 .hideNumberScroll {
   /* Chrome, Safari, Edge, Opera */
@@ -274,10 +269,45 @@ body{
   }
 }
 
+@media (min-width: 320px){
+  .cdk-overlay-container:has(.mat-datepicker-content) {
+    .cdk-overlay-pane{
+      top: 36% !important;
+      left: 2% !important;
+    }
+  }
+}
+
+@media (min-width: 576px){
+  .cdk-overlay-container:has(.mat-datepicker-content) {
+    .cdk-overlay-pane{
+      left: 24% !important;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .cdk-overlay-container:has(.mat-datepicker-content) {
+    .cdk-overlay-pane{
+      left: 36% !important;
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .cdk-overlay-container:has(.mat-datepicker-content) {
+    .cdk-overlay-pane{
+      top: 42% !important;
+      left: 42% !important;
+    }
+  }
+}
+
 @include media-breakpoint-down(sm) {
+  
   .warning-badge{
     &__parent{
-      top: 56px;
+      // top: 56px;
     }
     &__icon{}
     &__text{
@@ -295,6 +325,7 @@ body{
     }
   }
   .ManageKnowledgeBases__btn {
+    max-width: 300px !important;
     margin-right: 10px;
   }
   .ManageKnowledgeBasesDialog {

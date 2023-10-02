@@ -108,6 +108,7 @@
 }
 
 .account-page-vertical-input-fields{
+    display: flex;
     width: fit-content;
     grid-column-gap: 10px;
 }
@@ -152,6 +153,29 @@
 
 
 @include media-breakpoint-down(sm) {
+    .account-page-vertical-input-fields{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .new-account__section-2__input-goldfire{
+        grid-column: 1 / span 2;
+    }
+    .new-account__section-2__input-goldfire--checkbox{
+        .example-margin{
+            margin: 0px !important;
+        }
+    }
+    .new-account__section-2__input-fields-vertical{
+        .mat-input-container{
+            width: 140px !important;
+        }
+    }
+    .new-account__section-2__input-fields-vertical:nth-last-child(1){
+        grid-column: 1 / span 2;
+        .mat-input-container{
+            width: 300px !important;
+        }
+    }
     .new-account__section-2__btn-1{
         margin: 0;
     }
@@ -173,7 +197,9 @@
                     &__btn{
                         &-1{}
                         &-2{}
-                        &-3{}
+                        &-3{
+                            width: 70px;
+                        }
                     }
                 }
             }

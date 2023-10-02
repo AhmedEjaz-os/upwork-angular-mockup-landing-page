@@ -7,7 +7,9 @@
   </div>
   <div class="edit-license__section-2">
     <h4>Edit License</h4>
-    <div class="edit-license__section-2-vertical-row flex-wrap">
+
+    
+    <div class="edit-license__section-2-vertical-row">
       <app-page-1-new-input-fields class="hideNumberScroll edit-license__section-2-vertical-row__field-1" [val]="{value: 9999}" [type]="{inpType: 'number'}" [label]="{title: 'License'}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" disable="true" ></app-page-1-new-input-fields>
       <app-page-1-new-input-fields class="edit-license__section-2-vertical-row__field-2" [type]="{inpType: 'number'}" [label]="{title: 'Seats'}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
       <app-material-checkbox class="edit-license__section-2-vertical-row__field-3" [label]="{title: 'Concurrent'}"></app-material-checkbox>
@@ -29,6 +31,38 @@
       <app-material-dropdown-select-menu [label]="{title: ''}" 
       [menuItem]="dropdownMenu2" class="edit-license__section-2-vertical-row__field-12" ></app-material-dropdown-select-menu>
     </div>
+
+
+    <div class="edit-license__section-2-vertical-row-md-lg">
+      <div class="edit-license__section-2-vertical-row-md-lg-1">
+        <app-page-1-new-input-fields class="hideNumberScroll edit-license__section-2-vertical-row__field-1" [val]="{value: 9999}" [type]="{inpType: 'number'}" [label]="{title: 'License'}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" disable="true" ></app-page-1-new-input-fields>
+        <app-page-1-new-input-fields class="edit-license__section-2-vertical-row__field-2" [type]="{inpType: 'number'}" [label]="{title: 'Seats'}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
+        <app-material-checkbox class="edit-license__section-2-vertical-row__field-3" [label]="{title: 'Concurrent'}"></app-material-checkbox>
+        <app-material-date-picker class="edit-license__section-2-vertical-row__field-4" [label]="{title: 'Starts'}" required="true"></app-material-date-picker>
+      </div>
+      <div class="edit-license__section-2-vertical-row-md-lg-2">
+        <div class="space-md-lg"></div>
+        <div class="edit-license__section-2-vertical-row__field--5--6">
+          <app-material-date-picker class="edit-license__section-2-vertical-row__field-5" [label]="{title: 'Software Expires'}" required="true"></app-material-date-picker>
+          <app-material-checkbox class="edit-license__section-2-vertical-row__field-6" [label]="{title: 'Perpetual'}"></app-material-checkbox>
+        </div>
+        <div class="edit-license__section-2-vertical-row__field--7--8">
+          <app-material-date-picker class="edit-license__section-2-vertical-row__field-7" [label]="{title: 'Content Expires'}" required="true"></app-material-date-picker>
+          <app-material-checkbox class="edit-license__section-2-vertical-row__field-8" [label]="{title: 'Perpetual'}"></app-material-checkbox>
+        </div>
+        <div class="edit-license__section-2-vertical-row__field--9--10">
+          <app-material-date-picker class="edit-license__section-2-vertical-row__field-9" [label]="{title: 'Maintenance Expires'}" required="true"></app-material-date-picker>
+          <app-material-checkbox class="edit-license__section-2-vertical-row__field-10" [label]="{title: 'Perpetual'}"></app-material-checkbox>
+        </div>
+      </div>
+      <div class="edit-license__section-2-vertical-row-md-lg-3">
+        <div class="space-md-lg"></div>
+        <app-material-dropdown-select-menu class="edit-license__section-2-vertical-row__field-11" [label]="{title: 'Type'}" 
+        [menuItem]="dropdownMenu1" ></app-material-dropdown-select-menu>
+        <app-material-dropdown-select-menu [label]="{title: ''}" 
+        [menuItem]="dropdownMenu2" class="edit-license__section-2-vertical-row__field-12" ></app-material-dropdown-select-menu>
+      </div>
+    </div>
     <div class="edit-license__section-2-vertical-row-2 d-flex align-items-start align-items-md-center flex-wrap flex-column flex-md-row">
       <app-page-1-new-input-fields class="hideNumberScroll edit-license__section-2-vertical-row-2__field-1 mr-3" [val]="{value: ''}" [type]="{inpType: 'number'}" [label]="{title: 'Opportunity (License ID)'}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
       <app-page-1-new-input-fields class="hideNumberScroll edit-license__section-2-vertical-row-2__field-2 mr-3" [val]="{value: ''}" [type]="{inpType: 'number'}" [label]="{title: ''}" [required]="true" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
@@ -38,9 +72,9 @@
       <app-material-dropdown-select-menu class="edit-license__section-2-vertical-row-3__field-1" [label]="{title: 'Code'}" 
       [menuItem]="dropdownMenu3" ></app-material-dropdown-select-menu>
     </div>
-    <div class="edit-license__section-2-vertical-row-4 d-flex align-items-start align-items-sm-center justify-content-start justify-content-sm-between mt-5 flex-wrap flex-column flex-sm-row">
+    <div class="edit-license__section-2-vertical-row-4 d-flex align-items-start align-items-md-center justify-content-start justify-content-sm-between flex-wrap flex-column flex-sm-row">
       <button class="edit-license__section-2-vertical-row-4-btn-1 btn btn-primary" (click)="openDialog()" >Manage KBs</button>
-      <div class="d-flex align-items-center flex-wrap mt-5 mt-sm-0">
+      <div class="d-flex align-items-center flex-wrap mt-3 mt-md-0 justify-content-between justify-content-md-start">
         <button class="edit-license__section-2-vertical-row-4-btn-2 btn btn-primary mr-3 text-dark">Cancel</button>
         <button class="edit-license__section-2-vertical-row-4-btn-3 btn btn-primary" >Save</button>
       </div>

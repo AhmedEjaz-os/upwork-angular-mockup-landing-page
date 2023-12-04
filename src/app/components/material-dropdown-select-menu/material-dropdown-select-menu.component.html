@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>{{label?.title}}</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let item of menuItem" [value]="item?.menuItemTitle">
+      {{item?.menuItemTitle}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

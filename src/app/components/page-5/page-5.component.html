@@ -1,0 +1,57 @@
+<div class="overflow-hidden w-100 warning-badge__parent" id="warning-badge-bar">
+  <app-warning-badge></app-warning-badge>
+</div>
+<div class="modify-server-registration ml-1 ml-sm-3 mr-sm-3 mr-1">
+  <div class="modify-server-registration__section-1">
+    <p><a href="/" class="modify-server-registration__section-1__breadcrumbs">Home</a> > <a href="view-account"
+        class="modify-server-registration__section-1__breadcrumbs">View Account</a> > <span>Modify Server
+        Registration</span></p>
+  </div>
+  <div class="modify-server-registration__section-2 mt-5">
+    <h4 class="modify-server-registration__section-2--title">IHS Goldfire Server is registered as:</h4>
+    <div class="modify-server-registration__section-2--grid-fields">
+      <app-page-1-new-input-fields class="modify-server-registration__section-2--field-1 mt-5 d-block"
+        [val]="{value: '01/28/2020 08:07:02'}" [type]="{inpType: 'text'}"
+        [label]="{title: 'Registration date and time:'}" [required]="false" [placeHolder]="{text: ''}"
+        [errorMessageForRequiredField]="{error: ''}" disable="true">
+      </app-page-1-new-input-fields>
+      <app-page-1-new-input-fields class="modify-server-registration__section-2--field-2 mt-3"
+        [val]="{value: '0975E-5E35C-J3A41-5J7AK-30876'}" [type]="{inpType: 'text'}" [label]="{title: 'Serial Number:'}"
+        [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" disable="true">
+      </app-page-1-new-input-fields>
+      <app-page-1-new-input-fields class="modify-server-registration__section-2--field-3 mt-3"
+        [val]="{value: '2020-01-28-08-07-0'}" [type]="{inpType: 'text'}" [label]="{title: 'Installation date:'}"
+        [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}">
+      </app-page-1-new-input-fields>
+      <app-page-1-new-input-fields class="modify-server-registration__section-2--field-4 mt-3"
+        [val]="{value: '005056855f3c'}" [type]="{inpType: 'text'}" [label]="{title: 'Ethernet:'}" [required]="false"
+        [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
+      <app-page-1-new-input-fields class="modify-server-registration__section-2--field-5 mt-3"
+        [val]="{value: '373b13e9-ecdb65bc-A'}" [type]="{inpType: 'text'}" [label]="{title: 'Disk:'}" [required]="false"
+        [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
+      <app-page-1-new-input-fields class="modify-server-registration__section-2--field-6 mt-3"
+        [val]="{value: 'VWC-2PGDF-DEM'}" [type]="{inpType: 'text'}" [label]="{title: 'Computer'}" [required]="false"
+        [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
+      <app-page-1-new-input-fields class="modify-server-registration__section-2--field-7 mt-3" [val]="{value: 1}"
+        [type]="{inpType: 'number'}" [label]="{title: 'Max. number of automatic registration change:'}"
+        [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}">
+      </app-page-1-new-input-fields>
+      <app-page-1-new-input-fields class="modify-server-registration__section-2--field-8 mt-3" [val]="{value: 1}"
+        [type]="{inpType: 'number'}" [label]="{title: 'Delay for automatic registration change in hours:'}"
+        [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}">
+      </app-page-1-new-input-fields>
+      <app-page-1-new-input-fields class="modify-server-registration__section-2--field-9 mt-3" [val]="{value: 1}"
+        [type]="{inpType: 'number'}" [label]="{title: 'Current number of automatic registration change:'}"
+        [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}">
+      </app-page-1-new-input-fields>
+      <div class="modify-server-registration__section-2--btn-row mt-3 float-right mb-5">
+        <a href="view-account"
+          class="modify-server-registration__section-2--btn-row-1 btn mr-3 text-dark text-decoration-none mt-3 mt-sm-0">Cancel</a>
+        <button class="modify-server-registration__section-2--btn-row-2 btn btn-primary mr-3 mt-3 mt-sm-0">Unregister
+          Server</button>
+        <a href="view-account"
+          class="modify-server-registration__section-2--btn-row-3 btn btn-primary text-white text-decoration-none mt-3 mt-sm-0">Update</a>
+      </div>
+    </div>
+  </div>
+</div>

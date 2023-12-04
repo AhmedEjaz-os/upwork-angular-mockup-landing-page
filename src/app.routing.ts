@@ -4,26 +4,35 @@ import { Routes, RouterModule } from "@angular/router";
 import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 
 // Component Imports
-import { AppComponent } from "./app/app.component";
-import { AngularMaterialDialogComponent } from "./app/components/angular-material-dialog/angular-material-dialog.component";
-import { HeaderComponent } from "./app/components/header/header.component";
-import { HomeComponent } from "./app/components/home/home.component";
+import { Page1Component } from "./app/components/page-1/page-1.component";
+import { Page2Component } from "./app/components/page-2/page-2.component";
+import { Page3Component } from "./app/components/page-3/page-3.component";
+import { Page4Component } from "./app/components/page-4/page-4.component";
+import { Page5Component } from "./app/components/page-5/page-5.component";
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent,
+    component: Page1Component,
     data: {
-      breadcrumb: "HOME",
+      breadcrumb: "...",
     },
   },
   {
-    path: "user",
-    component: HeaderComponent,
+    path: "new-account",
+    component: Page2Component,
   },
   {
-    path: "post",
-    component: AngularMaterialDialogComponent,
+    path: "edit-license",
+    component: Page3Component,
+  },
+  {
+    path: "view-account",
+    component: Page4Component,
+  },
+  {
+    path: "view-account/modify-server-registration",
+    component: Page5Component,
   },
 ];
 @NgModule({

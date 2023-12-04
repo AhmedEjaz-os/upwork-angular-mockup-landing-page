@@ -1,0 +1,135 @@
+.modify-server-registration{
+    &__section{
+        &-1{}
+        &-2{
+            width: fit-content;
+            margin: 0 auto;
+            @extend .view-account__section-2;
+            &--grid-fields{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                align-items: flex-end;
+                grid-column-gap: 30px;
+            }
+            &--title{
+                text-align: center;
+            }
+            &--field-1{}
+            &--field-2{}
+            &--field-3{}
+            &--field-4{}
+            &--field-5{}
+            &--field-6{}
+            &--field-7{
+                .mat-input-flex{
+                    padding-right: 10px;
+                }
+            }
+            &--field-8{
+                .mat-input-flex{
+                    padding-right: 10px;
+                }
+            }
+            &--field-9{
+                margin-bottom: 10px;
+                .mat-input-flex{
+                    padding-right: 10px;
+                }
+            }
+            &--btn-row{
+                display: flex;
+                &-1{
+                    @extend .new-account__section-2--button-row__btn-1;
+                    width: 74px;
+                }
+                &-2{}
+                &-3{
+                    width: 74px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm){
+    .modify-server-registration{
+        &__section{
+            &-1{}
+            &-2{
+                &--grid-fields{
+                    grid-template-columns: 100%;
+                }
+                &--title{
+                    text-align: start;
+                }
+                &--field-1{}
+                &--field-2{}
+                &--field-3{}
+                &--field-4{}
+                &--field-5{}
+                &--field-6{}
+                &--field-7{
+                    .mat-input-flex{}
+                }
+                &--field-8{
+                    .mat-input-flex{}
+                }
+                &--field-9{
+                    .mat-input-flex{}
+                }
+                &--btn-row{
+                    width: 300px;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-row-gap: 16px;
+                    &-1{
+                        order: 2;
+                        margin-right: 0px !important;
+                    }
+                    &-2{
+                        order: 1;
+                        margin-right: 0px !important;
+                        grid-column: 1 / span 2;
+                    }
+                    &-3{
+                        order: 3;
+                        margin: 0 0 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(lg){
+    .modify-server-registration{
+        &__section{
+            &-1{}
+            &-2{
+                &--grid-fields{}
+                &--title{
+                    margin-left: 0px !important;
+                }
+                &--field-1{}
+                &--field-2{}
+                &--field-3{}
+                &--field-4{}
+                &--field-5{}
+                &--field-6{}
+                &--field-7{
+                    .mat-input-flex{}
+                }
+                &--field-8{
+                    .mat-input-flex{}
+                }
+                &--field-9{
+                    .mat-input-flex{}
+                }
+                &--btn-row{
+                    &-1{}
+                    &-2{}
+                    &-3{}
+                }
+            }
+        }
+    }
+}

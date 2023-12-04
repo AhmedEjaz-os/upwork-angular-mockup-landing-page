@@ -1,0 +1,48 @@
+<div class="overflow-hidden w-100 warning-badge__parent" id="warning-badge-bar">
+    <app-warning-badge></app-warning-badge>
+</div>
+<div class="homepage">
+    <div class="homepage-section-1 ml-4">
+        <p><a href="/" class="homepage-section-1__breadcrumbs">Home</a> > <span>...</span></p>
+    </div>
+    <div class="homepage-section-2">
+        <h5 class="homepage-section-2__title text-uppercase">Go to account using the Goldfire serial number OR
+            License ID</h5>
+        <div class="d-flex flex-column mt-5 align-items-start homepage-section-2__input-1">
+            <app-page-1-new-input-fields class="hideNumberScroll" [type]="{inpType: 'number'}" [label]="{title: 'Serial number'}" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}" ></app-page-1-new-input-fields>
+            <a href="view-account" class="btn btn-primary homepage-section-2__input-1__btn text-decoration-none text-white">View Account</a>
+        </div>
+        <div class="d-flex flex-column mt-5 align-items-start homepage-section-2__input-2">
+            <div class="d-flex flex-column flex-sm-row">
+                <app-page-1-new-input-fields class="hideNumberScroll" [type]="{inpType: 'number'}" [label]="{title: 'License ID'}" [required]="false" [placeHolder]="{text: ''}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
+            </div>
+            <div class="d-flex section-1-btn-row">
+                <a href="view-account" class="btn btn-primary homepage-section-2__input-2__btn-1 mr-3 text-decoration-none text-white">View Account</a>
+                <a href="edit-license" class="btn btn-primary homepage-section-2__input-2__btn-2 text-white text-decoration-none">Edit License</a>
+            </div>
+        </div>
+    </div>
+    <div class="homepage-section-3 mt-5">
+        <h5 class="homepage-section-2__title text-uppercase">Go to account using the company name AND Goldfire
+            account</h5>
+        <div class="d-flex flex-column mt-3">
+            <div class="d-flex flex-column flex-md-row justify-content-between justify-content-md-start align-items-start align-items-md-center">
+                <app-select-menu class="homepage-select-menu" [menuHeading]="selectMenuHeadingOne"
+                    [button]="selectMenuHeadingOneArray"></app-select-menu>
+                <app-select-menu [menuHeading]="selectMenuHeadingTwo" [button]="selectMenuHeadingTwoArray" class="homepage-select-menu-2 mt-3 mt-md-0">
+                </app-select-menu>
+            </div>
+            <div class="d-flex align-items-center pt-4 homepage-section-3__btn">
+                <a href="view-account" class="btn btn-primary homepage-section-3__btn-1 mr-3 text-decoration-none text-white">View Account</a>
+                <a href="new-account" class="btn btn-primary homepage-section-3__btn-2">New Account</a>
+            </div>
+        </div>
+    </div>
+    <div class="homepage-section-4 mt-5">
+        <h5 class="homepage-section-4__title text-uppercase">Create new company and add Goldfire accounts</h5>
+        <div class="d-flex flex-column justify-content-center">
+            <app-page-1-new-input-fields [type]="{inpType: 'text'}" [label]="{title: 'Enter company name'}" [required]="false" [placeHolder]="{text: 'Please Enter a company name'}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
+            <button class="homepage-section-4__btn btn btn-primary">New Company</button>
+        </div>
+    </div>
+</div>

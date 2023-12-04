@@ -1,0 +1,9 @@
+<mat-form-field class="date-picker">
+  <mat-label>{{label.title}}</mat-label>
+  <div class="d-flex align-items-center">
+    <input *ngIf="required" matInput [matDatepicker]="picker" placeholder="MM/DD/YYYY" required>
+    <input *ngIf="!required" matInput [matDatepicker]="picker" placeholder="MM/DD/YYYY">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </div>
+</mat-form-field>

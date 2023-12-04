@@ -1,0 +1,50 @@
+.header {
+  &-section {
+    &-1 {
+      &__title {
+        font-size: 1.75rem ;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+    }
+    &-2 {
+      &__title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      &__logout{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header {
+  &-section {
+    &-1 {
+      &__title {
+        font-size: 1rem
+      }
+    }
+    &-2 {
+      &__title {
+        font-size: 0.8rem
+      }
+      &__logout{
+        font-size: 0.6rem
+      }
+    }
+  }
+}
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}

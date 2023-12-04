@@ -1,2 +1,353 @@
 // src/sass/styles.scss
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./app/components/page-1-new-input-fields/page-1-new-input-fields.component.scss";
+@import "./assets/scss/fonts.scss";
+@import "./assets/scss/header.scss";
+@import "./assets/scss/homepage.scss";
+@import "./assets/scss/editLicense.scss";
+@import "./assets/scss/newAccount.scss";
+@import "./assets/scss/viewAccount.scss";
+@import "./assets/scss/modifyServerRegistration.scss";
+
+
+// Global Components Stylings here...
+.top-level-parent {
+  padding-bottom: 60px;
+}
+
+.select-menu {
+  width: 290px;
+  height: 200px;
+  border: 3px solid black;
+  overflow-y: scroll;
+  position: relative;
+  border-radius: 10px;
+  &__title {
+    width: fit-content;
+    margin: 0 auto;
+    font-family: sans-serif !important;
+    font-weight: 600;
+  }
+  button {
+    text-align: start;
+    border: none !important;
+    color: white;
+    background-color: rgb(126, 126, 126);
+    &:active {
+      background-color: rgb(158, 158, 158);
+    }
+  }
+}
+
+.select-menu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+.select-menu::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.select-menu::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #2c4054),
+    color-stop(0.72, #203b57),
+    color-stop(0.86, #2c4054)
+  );
+}
+
+.ManageKnowledgeBasesDialog::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+.ManageKnowledgeBasesDialog::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.ManageKnowledgeBasesDialog::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #2c4054),
+    color-stop(0.72, #203b57),
+    color-stop(0.86, #2c4054)
+  );
+}
+
+.ManageKnowledgeBasesDialog {
+  overflow: scroll;
+}
+
+.btn-primary {
+  box-shadow: 0 6px 30px -10px #000;
+}
+
+.account-page-input-fields {
+  &__title {
+    width: 200px;
+  }
+  &__input {
+    width: 250px;
+    border: 3px solid black;
+  }
+}
+
+.account-page-input-fields-verticle {
+  &__title {
+    width: 100px;
+  }
+  &__input {
+    width: 150px;
+    border: 3px solid black;
+  }
+}
+
+.additionalContactDialog {
+  &__btn {
+    width: 300px;
+    button {
+      width: 74px;
+    }
+  }
+  &__input {
+    &-1,
+    &-2,
+    &-3 {
+      display: block;
+      width: fit-content;
+      .example-container {
+        width: fit-content;
+      }
+    }
+    &-1 {
+    }
+    &-2 {
+    }
+    &-3 {
+    }
+  }
+}
+
+.ManageKnowledgeBasesDialog {
+  max-width: 430px;
+  width: 100% !important;
+}
+
+.ManageKnowledgeBases {
+  &__btn {
+    padding: 0px !important;
+    margin-bottom: 1em !important;
+    max-width: 400px;
+    width: 100%;
+    .ManageKnowledgeBases-btn-grey {
+      @extend .new-account__section-2--button-row__btn-1;
+      border: none !important;
+      box-shadow: 0 11px 10px -7px #000 !important;
+      width: 74px;
+      &:hover {
+        background-color: #999 !important;
+        border: none !important;
+      }
+      &:focus {
+        background-color: #999 !important;
+        border-color: #0062cc !important;
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5) !important;
+      }
+    }
+    .ManageKnowledgeBases-btn-primary {
+      width: 74px;
+      box-shadow: 0 11px 10px -7px #000 !important;
+    }
+  }
+}
+
+.dialog-btn-grey {
+  @extend .new-account__section-2--button-row__btn-1;
+  border: none !important;
+  box-shadow: 0 36px 10px 0px #000 !important;
+  width: 74px;
+  &:hover {
+    background-color: #999 !important;
+    border: none !important;
+  }
+  &:focus {
+    background-color: #999 !important;
+    border-color: #0062cc !important;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5) !important;
+  }
+}
+
+.dialog-btn-primary {
+  box-shadow: 0 36px 10px 0px #000;
+  width: 74px;
+  &:focus {
+  }
+}
+
+.cdk-overlay-container:has(.mat-dialog-title) {
+  .mat-dialog-container {
+    padding: 0px !important;
+    width: 500px;
+  }
+}
+.cdk-overlay-container:has(.mat-menu-panel) {
+  .cdk-overlay-pane {
+    max-width: unset !important;
+    width: unset !important;
+    margin-top: 50px;
+  }
+}
+
+.hideNumberScroll {
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+.date-picker {
+  .mat-input-wrapper {
+    .mat-input-flex {
+      .mat-input-infix {
+        .mat-input-element {
+          margin-top: 6px;
+        }
+        .mat-form-field-label-wrapper {
+          .mat-form-field-label {
+            margin-bottom: 0px;
+            padding-top: 20px;
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+body{
+  position: relative;
+}
+
+.date-picker{
+  ::placeholder {
+    font-size: 14px;
+  }  
+}
+
+.warning-badge{
+  background-color: #eccf78;
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+  width: fit-content;
+  border-radius: 0px;
+  margin: 0 auto;
+  transition: .6s all ease-in-out;
+  &__parent{
+    transition: .6s all ease-in-out;
+    position: absolute;
+    top: 64px;
+  }
+  &__icon{}
+  &__text{
+    white-space: break-spaces;
+    &-x{}
+  }
+}
+
+@media (min-width: 320px){
+  .cdk-overlay-container:has(.mat-datepicker-content) {
+    .cdk-overlay-pane{
+      top: 36% !important;
+      left: 2% !important;
+    }
+  }
+}
+
+@media (min-width: 576px){
+  .cdk-overlay-container:has(.mat-datepicker-content) {
+    .cdk-overlay-pane{
+      left: 24% !important;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .cdk-overlay-container:has(.mat-datepicker-content) {
+    .cdk-overlay-pane{
+      left: 36% !important;
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .cdk-overlay-container:has(.mat-datepicker-content) {
+    .cdk-overlay-pane{
+      top: 42% !important;
+      left: 42% !important;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  
+  .warning-badge{
+    &__parent{
+      // top: 56px;
+    }
+    &__icon{}
+    &__text{
+      &-x{}
+    }
+  }
+  .cdk-overlay-container:has(.mat-dialog-title) {
+    .cdk-overlay-pane {
+      max-width: 100vw !important;
+      width: 100%;
+    }
+    .mat-dialog-container {
+      margin: 0 auto;
+      width: 320px;
+    }
+  }
+  .ManageKnowledgeBases__btn {
+    max-width: 300px !important;
+    margin-right: 10px;
+  }
+  .ManageKnowledgeBasesDialog {
+    max-width: 270px;
+    width: 100%;
+    &--checkbox{
+      display: block;
+      width: fit-content;
+      .mat-checkbox-inner-container{
+        margin-top: 0px !important;
+      }
+      .mat-checkbox-label{
+        word-break: break-all;
+        word-wrap: break-word;
+        text-wrap: wrap;
+      }
+    }
+  }
+  .warning-badge{
+    &__icon{}
+    &__text{
+      &-x{}
+    }
+  }
+}

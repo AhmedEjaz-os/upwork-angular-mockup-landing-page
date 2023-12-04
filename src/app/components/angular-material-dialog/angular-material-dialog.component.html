@@ -1,3 +1,19 @@
-<p>
-  angular-material-dialog works!
-</p>
+<h1 mat-dialog-title class="dialog-title">{{data?.title}}</h1>
+<div mat-dialog-content *ngIf="data?.html === 'additionalContactDialog'">
+  <app-page-1-new-input-fields [type]="{inpType: 'text'}" [label]="{title: 'Contact Name'}" class='additionalContactDialog__input-1 mt-5' [required]='true' [placeHolder]="{text: 'Enter Contact Name'}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
+  <app-page-1-new-input-fields [type]="{inpType: 'email'}" [label]="{title: 'Email'}" class='additionalContactDialog__input-2 mt-3' [required]='true' [placeHolder]="{text: 'Enter Contact Email'}" [errorMessageForRequiredField]="{error: ''}"></app-page-1-new-input-fields>
+  <app-page-1-new-input-fields [type]="{inpType: 'number'}" [label]="{title: 'Phone'}" class='additionalContactDialog__input-3 mt-3 mb-3 hideNumberScroll' [required]='false' [placeHolder]="{text: 'Enter Contact Phone Number'}" [errorMessageForRequiredField]="{error: ''}" [hint]="{message: 'Please include country code'}"></app-page-1-new-input-fields>
+  <div class="d-flex align-items-center justify-content-end additionalContactDialog__btn pr-1">
+    <button class="dialog-btn-grey btn btn-primary mr-3 text-dark" aria-label="close dialog" mat-dialog-close>Cancel</button>
+    <button class="dialog-btn-primary btn btn-primary" >Save</button>
+  </div>
+</div>
+<div mat-dialog-content *ngIf="data?.html === 'ManageKnowledgeBases'" class="ManageKnowledgeBasesDialog">
+  <app-material-checkbox class="ManageKnowledgeBasesDialog--checkbox" *ngFor="let ManageKnowledgeBase1 of ManageKnowledgeBases1;" [label]="ManageKnowledgeBase1"></app-material-checkbox>
+  <hr style="border-top: none !important; border-left: none !important; border-right: none !important; border-bottom-width: 2px; border-style: solid; width: 60%; margin-left: 12px;" />
+  <app-material-checkbox class="ManageKnowledgeBasesDialog--checkbox" *ngFor="let ManageKnowledgeBase2 of ManageKnowledgeBases2;" [label]="ManageKnowledgeBase2"></app-material-checkbox>
+</div>
+<div mat-dialog-actions *ngIf="data?.html === 'ManageKnowledgeBases'" class="d-flex align-items-center justify-content-end ManageKnowledgeBases__btn pr-1">
+  <button class="ManageKnowledgeBases-btn-grey btn btn-primary mr-3 text-dark" aria-label="close dialog" mat-dialog-close>Cancel</button>
+  <button class="ManageKnowledgeBases-btn-primary btn btn-primary" >Save</button>
+</div>

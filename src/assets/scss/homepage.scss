@@ -1,0 +1,245 @@
+// Button Stylings
+@mixin btn-primary {
+  border-radius: 0px !important;
+  padding: 1px 6px !important;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  transition: 0.6s all ease-in-out;
+  &:hover {
+    border: 2px solid black;
+    box-shadow: 4px -4px black;
+    cursor: pointer;
+  }
+}
+
+.homepage {
+  &-section {
+    &-1 {
+      &__breadcrumbs {
+        text-decoration: underline;
+      }
+    }
+    &-2 {
+      margin-left: 5rem;
+      width: fit-content;
+      &__title {
+        font-size: 18px;
+      }
+      &__input {
+        &-1 {
+          grid-row-gap: 14px;
+          &__btn {
+            width: 140px;
+          }
+        }
+        &-2 {
+          grid-row-gap: 14px;
+          &__label {
+            text-align: end;
+            width: 158px;
+          }
+          &__field {
+            width: 284px;
+            border: 3px solid black;
+          }
+          &__btn {
+            &-1 {
+              width: 140px;
+            }
+            &-2 {
+              width: 140px;
+            }
+          }
+        }
+      }
+    }
+    &-3 {
+      margin-left: 5rem;
+      width: fit-content;
+      &__btn {
+        &-1 {
+          width: 140px;
+        }
+        &-2 {
+          width: 140px;
+        }
+      }
+    }
+    &-4 {
+      margin-left: 5rem;
+      &__title {
+        @extend .mb-5;
+      }
+      &__btn{
+        width: 140px;
+      }
+    }
+  }
+  &-select-menu {
+    margin-right: 9.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .homepage {
+    &-select-menu {
+      margin-right: 0px !important;
+      .select-menu__parent {
+        width: fit-content;
+      }
+      &-2 {
+        .select-menu__parent {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .homepage {
+    &-section {
+      &-1 {
+        &__breadcrumbs {
+        }
+      }
+      &-2 {
+        margin-left: 1rem;
+        &__title {
+        }
+        &__input {
+          &-1 {
+            &__label {
+            }
+            &__field {
+            }
+            &__btn {
+            }
+          }
+          &-2 {
+            &__label {
+              text-align: start;
+            }
+            &__field {
+            }
+            &__btn {
+              &-1 {
+              }
+              &-2 {
+              }
+            }
+          }
+        }
+      }
+      &-3 {
+        &__btn {
+          width: fit-content;
+          &-1 {
+            margin-left: 0px;
+          }
+          &-2 {
+            margin-left: 0px;
+          }
+        }
+      }
+      &-4 {
+        &__title {
+        }
+        &__field {
+          &::placeholder {
+          }
+        }
+        &__btn {}
+      }
+    }
+    &-select-menu {
+      .select-menu__parent {
+        width: fit-content;
+      }
+      &-2 {
+        .select-menu__parent {
+          width: fit-content;
+        }
+      }
+    }
+  }
+  .section-1-btn-row{
+    width: 300px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .homepage {
+    &-section {
+      &-1 {
+        &__breadcrumbs {
+        }
+      }
+      &-2 {
+        margin-left: 1rem;
+        &__title {
+        }
+        &__input {
+          &-1 {
+            &__label {
+            }
+            &__field {
+              width: 250px;
+            }
+            &__btn {
+            }
+          }
+          &-2 {
+            &__label {
+            }
+            &__field {
+              width: 250px;
+            }
+            &__btn {
+              &-1 {
+              }
+              &-2 {
+                margin-left: 1rem;
+              }
+            }
+          }
+        }
+      }
+      &-3 {
+        margin-left: 1rem;
+        &__btn {
+          &-1 {
+          }
+          &-2 {
+          }
+        }
+      }
+      &-4 {
+        margin-left: 1rem;
+        &__title {
+        }
+        &__btn {
+        }
+      }
+    }
+    &-select-menu {
+      margin-right: 5.6rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage {
+    &-section {
+      &-3 {
+        &__btn {
+          &-1 {
+            margin-left: 0px !important;
+          }
+          &-2 {
+            margin-left: 0px !important;
+          }
+        }
+      }
+    }
+  }
+}
